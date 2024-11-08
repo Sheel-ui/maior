@@ -29,7 +29,7 @@ export default function BarGraphChart() {
 	// Only render TimeSeries if chartData is not null
 	return (
 		<div className="relative">
-			<div className="absolute right-2 top-2">
+			<div className="absolute right-6 top-2">
 				<Select value={selectedRange} onValueChange={setSelectedRange}>
 					<SelectTrigger className="w-[100px]">
 						<SelectValue placeholder="month" />

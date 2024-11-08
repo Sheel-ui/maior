@@ -263,7 +263,11 @@ def group_by_month(transactions):
 def aggregate_category_by_month(transactions, month):
     category_totals = defaultdict(float)
     monthly_data = group_by_month(transactions)
-    # Check if the specified month exists in the data
+    if month == 0 :
+        for transaction in transactions:
+            category = transaction["category"][0]
+            amount = transaction["amount"]
+            category_totals[category] += amount
     if month in monthly_data:
         # Aggregate amounts by category for the given month
         for transaction in monthly_data[month]:
@@ -275,4 +279,20 @@ def aggregate_category_by_month(transactions, month):
 
     # Format the result as a list of category totals for the given month
     result = [{"category": cat, "amount": round(total, 2), "fill": f"var(--color-{cat})"} for cat, total in category_totals.items()]
+    return result
+
+def aggregate_channel_by_month(transactions, month):
+    monthly_data = group_by_month(transactions)
+    initial_values = {'online': 0, 'in store': 0, 'other': 0}
+    channel_totals = defaultdict(float, initial_values)
+    if month == 0 :
+        for transaction in transactions:
+            # Get the payment channel, defaulting to "other" if not found
+            channel = transaction.get("payment_channel", "other")
+            channel_totals[channel] += transaction["amount"]
+    if month in monthly_data:
+        for transaction in monthly_data[month]:
+            channel = transaction.get("payment_channel", "other")
+            channel_totals[channel] += transaction["amount"]
+    result = [{"channel": channel, "amount": round(total, 2)} for channel, total in channel_totals.items()]
     return result

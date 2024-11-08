@@ -47,3 +47,7 @@ async def get_bar_data():
 @router.get("/category/{month}")
 async def get_category_data(month: int):
     return aggregate_category_by_month(transaction_list["transactions"],month)
+
+@router.get("/channel/{month}")
+async def get_channel_data(month: int):
+    return aggregate_channel_by_month(transaction_list["transactions"],month)

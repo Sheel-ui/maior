@@ -12,7 +12,7 @@ import {
 
 export default function PieGraphChart() {
 	const [chartData, setChartData] = useState(null);
-	const [selectedRange, setSelectedRange] = useState("11");
+	const [selectedRange, setSelectedRange] = useState("0");
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
@@ -34,6 +34,7 @@ export default function PieGraphChart() {
 					</SelectTrigger>
 					<SelectContent>
 						<SelectGroup>
+							<SelectItem value="0">All</SelectItem>
 							<SelectItem value="5">May</SelectItem>
 							<SelectItem value="6">Jun</SelectItem>
 							<SelectItem value="7">Jul</SelectItem>

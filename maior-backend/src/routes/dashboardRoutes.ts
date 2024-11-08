@@ -61,4 +61,14 @@ router.get(
 	}
 );
 
+
+router.get(
+	"/channel/:id",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		const { id } = req.params;
+		await getGraphData(req, res, `channel/${id}`);
+	}
+);
+
 export default router;
