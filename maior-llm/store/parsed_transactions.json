@@ -1,0 +1,3093 @@
+[
+    {
+        "transaction_id": "3ygpJDZQnBUE3Yn7RQ0AS81V65dE6DFA4gwrN",
+        "amount": 21.0,
+        "date": "2024-11-03",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Popup Bagels",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "yBmJryNO48uP49nQm0KBcYqkQ4NxQOFgdBAKz",
+        "amount": 28.3,
+        "date": "2024-11-02",
+        "category": [
+            "Food and Drink",
+            "Bar"
+        ],
+        "category_id": "13001000",
+        "merchant_name": "Corks on Columbus",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "KRDzB7ELP0sD4vAaBR7LuLA1Q3kdQmUm8oDek",
+        "amount": 3901.5,
+        "date": "2024-11-02",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "kVrqLYBKyAcDokbaem16uJPBkd4xkRUvJear7",
+        "amount": 96.36,
+        "date": "2024-11-01",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Uncle Lou \u5feb\u6a02\u4eba",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "A5vzQ47a81u49pnjMP5mi6qoRg7XRnFne4Xv7",
+        "amount": 20.9,
+        "date": "2024-11-01",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "City Vineyard",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "v1R4vqYag8h80kB3wRa1iNPLp03DpmI06en9E",
+        "amount": 12.8,
+        "date": "2024-10-31",
+        "category": [
+            "Service",
+            "Insurance"
+        ],
+        "category_id": "18030000",
+        "merchant_name": "MetLife",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "0qZp4wKan1CwYoz3yKEmuBqA0xPV06tvQqdkp",
+        "amount": 9.03,
+        "date": "2024-10-31",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Ill Mattone Tribeca",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "NwqzKO5P3nFMvkQoxZRmSROYkgwRbLsd59Xpd",
+        "amount": 9.74,
+        "date": "2024-10-26",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "Salt & Straw",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "e5XwRY61Dquo5MDAOzqYuXAKm8oXRks7MzDLN",
+        "amount": 89.99,
+        "date": "2024-10-26",
+        "category": [
+            "Shops",
+            "Sporting Goods"
+        ],
+        "category_id": "19046000",
+        "merchant_name": "Champs Sports",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "Yk3z8YB1XnSpL9vjoR78hQ8n7eKQ3wTdN5ang",
+        "amount": 32.5,
+        "date": "2024-10-25",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Patsy's",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "z3784KNOaVFPLOBJoREvTbZzRarbmnsJa8mzY",
+        "amount": 18.0,
+        "date": "2024-10-23",
+        "category": [
+            "Shops",
+            "Supermarkets and Groceries"
+        ],
+        "category_id": "19047000",
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "mMP31YyAk0hRgd0LQxqpuyq6N19yO3UeR60my",
+        "amount": 31.88,
+        "date": "2024-10-21",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The Tiny Pony",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Yucca Valley",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "dZBdEYwDLPspdLak1OrNhdEBX8Rd7yhNkvq8k",
+        "amount": 46.19,
+        "date": "2024-10-21",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "Yacca Valley Flyers",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Yucca Valley",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "wP7a0BNAR8SpANz3JjZ5hv0pj3nv7LS3O8Eew",
+        "amount": 3.5,
+        "date": "2024-10-21",
+        "category": [
+            "Travel",
+            "Parking"
+        ],
+        "category_id": "22013000",
+        "merchant_name": "NYC DOT - Parking Meters",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "6AEp5qdReKhqgY0p4yV7SnNOpkgnRDsjqbe9o",
+        "amount": 23.6,
+        "date": "2024-10-21",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The Taco Stand",
+        "payment_channel": "in store",
+        "location": {
+            "city": "La Jolla",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "LQ1z39kDqjumaqnQO3VMi0Z1x9M0OesxN3LPj",
+        "amount": 19.71,
+        "date": "2024-10-21",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The Coyote Cone Morongo",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "DgEzwJXrxBhJnKxm7aPVt30vo7M3dbF6MENqn",
+        "amount": 38.06,
+        "date": "2024-10-19",
+        "category": [
+            "Shops",
+            "Automotive",
+            "Car Dealers and Leasing"
+        ],
+        "category_id": "19005007",
+        "merchant_name": "Frontier Cafe",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Yucca Valley",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "1BApa65QnPu6jYyvemZ7ioz6YqVoQOC40JVq3",
+        "amount": 30.0,
+        "date": "2024-10-18",
+        "category": [
+            "Transfer",
+            "Debit"
+        ],
+        "category_id": "21006000",
+        "merchant_name": "Joshua Tree National",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "PLxzAY5BKnuMbRXDxZ7JSmYzRgDmO1FKg8y70",
+        "amount": 23.39,
+        "date": "2024-10-18",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Mas o Menos",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Joshua Tree",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "qdaA36yXr8TXZjRzmA5JHAVRk47AXKTkqLjr9",
+        "amount": 27.73,
+        "date": "2024-10-18",
+        "category": [
+            "Shops",
+            "Vintage and Thrift"
+        ],
+        "category_id": "19050000",
+        "merchant_name": "New Day Thrift Store",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Yucca Valley",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "Bo6znaZ9xPHM6kvV5R7bSEarnqwEBDULg0Djp",
+        "amount": 16.17,
+        "date": "2024-10-17",
+        "category": [
+            "Food and Drink",
+            "Restaurants",
+            "Coffee Shop"
+        ],
+        "category_id": "13005043",
+        "merchant_name": "The Iconic Coffee Club",
+        "payment_channel": "in store",
+        "location": {
+            "city": "San Diego",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "3ygpJDZQnBUE3Yn7RQ0vuXM7KnjXQrsxVjv0N",
+        "amount": 212.09,
+        "date": "2024-10-17",
+        "category": [
+            "Shops",
+            "Supermarkets and Groceries"
+        ],
+        "category_id": "19047000",
+        "merchant_name": "Vons",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Yucca Valley",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "yBmJryNO48uP49nQm0K7T1A70eD13gfMrnzoz",
+        "amount": 30.87,
+        "date": "2024-10-17",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The Taco Stand",
+        "payment_channel": "in store",
+        "location": {
+            "city": "La Jolla",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "KRDzB7ELP0sD4vAaBR7JczxKogrznMuXnBVvk",
+        "amount": 75.45,
+        "date": "2024-10-17",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "Chevron",
+        "payment_channel": "in store",
+        "location": {
+            "city": "San Diego",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "kVrqLYBKyAcDokbaem1Ec0Nm18j0Y3sj6APD7",
+        "amount": 2.5,
+        "date": "2024-10-16",
+        "category": [
+            "Travel",
+            "Parking"
+        ],
+        "category_id": "22013000",
+        "merchant_name": "Citysd Parking 28881",
+        "payment_channel": "in store",
+        "location": {
+            "city": "San Diego",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "A5vzQ47a81u49pnjMP5bSm0aVPzme4F9YEpB7",
+        "amount": 7.53,
+        "date": "2024-10-16",
+        "category": [
+            "Healthcare",
+            "Healthcare Services"
+        ],
+        "category_id": "14001000",
+        "merchant_name": "Reuben H Fleet Box Off",
+        "payment_channel": "in store",
+        "location": {
+            "city": "San Diego",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "v1R4vqYag8h80kB3wRaXS4bewQ64ZRc8Xdy7E",
+        "amount": 2.5,
+        "date": "2024-10-15",
+        "category": [
+            "Travel",
+            "Public Transportation Services"
+        ],
+        "category_id": "22014000",
+        "merchant_name": "Mts Pronto Open Pay",
+        "payment_channel": "in store",
+        "location": {
+            "city": "San Diego",
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "0qZp4wKan1CwYoz3yKEgcEZwXMDEdkUjyK75p",
+        "amount": -6741.82,
+        "date": "2024-10-14",
+        "category": [
+            "Payment",
+            "Credit Card"
+        ],
+        "category_id": "16001000",
+        "merchant_name": null,
+        "payment_channel": "other",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "j98P6zqy3kuAgbow1mD4iLXYopqL9AiwArzYo",
+        "amount": 12.0,
+        "date": "2024-10-13",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Popup Bagels",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "rw6vyL0gr8FAKEV5vwDpivPzpyavgrSgYp9AR",
+        "amount": 32.0,
+        "date": "2024-10-11",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Famous Original Rays",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "4K0p815bn3U1LoyMnJzPhaNBozRakKt7eBLE4",
+        "amount": 31.0,
+        "date": "2024-10-09",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Mama's Too Upper",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "axPzVYqwdLS5YjvzR7L8T5KxvOA5q9S5RgDaA",
+        "amount": 4.3,
+        "date": "2024-10-06",
+        "category": [
+            "Shops",
+            "Pharmacies"
+        ],
+        "category_id": "19043000",
+        "merchant_name": "Walgreens",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Naperville",
+            "region": "IL"
+        }
+    },
+    {
+        "transaction_id": "xqRxj3NOr7C0kE5KZJyRf1w0J4g19KfQY46jP",
+        "amount": 54.0,
+        "date": "2024-10-05",
+        "category": [
+            "Shops",
+            "Pharmacies"
+        ],
+        "category_id": "19043000",
+        "merchant_name": "Walgreens",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Chicago",
+            "region": "IL"
+        }
+    },
+    {
+        "transaction_id": "JENzqg561vSZ56rXEzVMubX06gJbP8sv68LQ8",
+        "amount": 25.48,
+        "date": "2024-10-05",
+        "category": [
+            "Transfer",
+            "Third Party",
+            "Square"
+        ],
+        "category_id": "21010003",
+        "merchant_name": "Red June Cafe",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Chicago",
+            "region": "IL"
+        }
+    },
+    {
+        "transaction_id": "80ypm36axAS3DYvEPAMauo6mJBeokOCVp36K0",
+        "amount": 1400.26,
+        "date": "2024-10-03",
+        "category": [
+            "Travel",
+            "Lodging",
+            "Hotels and Motels"
+        ],
+        "category_id": "22012003",
+        "merchant_name": "Airbnb",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": "CA"
+        }
+    },
+    {
+        "transaction_id": "ZA9zZYdPXnhm6Ldn7Pa8iRBMnOYRoVsLXDZ9B",
+        "amount": 1.1,
+        "date": "2024-09-30",
+        "category": [
+            "Service",
+            "Shipping and Freight"
+        ],
+        "category_id": "18058000",
+        "merchant_name": "U.S. Post Office",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": "TN"
+        }
+    },
+    {
+        "transaction_id": "5kjpZP7RnySPAYQM3ne7Ty9w8KYyn7UAygpde",
+        "amount": 17.42,
+        "date": "2024-09-28",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Zurutto Ramen",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "oR9KmdgxrOsk09QPdbwpivxpkmwvJaSQp6zkR",
+        "amount": 15.68,
+        "date": "2024-09-28",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "Salt & Straw",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "bJ4zOYB6wDT5A6wqZnDpTdkzDOydVghrN5QdX",
+        "amount": 31.57,
+        "date": "2024-09-28",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Parla",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "gbpLnYDqP3hAx3NVr0ROigz7jvAge3s4B5pbv",
+        "amount": 11.95,
+        "date": "2024-09-28",
+        "category": [
+            "Shops",
+            "Pharmacies"
+        ],
+        "category_id": "19043000",
+        "merchant_name": "Duane Reade",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "Yk3z8YB1XnSpL9vjoR78hQ8yBRObZ1IzXKkx7",
+        "amount": 78.62,
+        "date": "2024-09-27",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Lartusi",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "z3784KNOaVFPLOBJoREvTbZqNLgek8SMD60ZN",
+        "amount": 8.71,
+        "date": "2024-09-26",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Zurutto Ramen",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "mMP31YyAk0hRgd0LQxqpuyqekg75npI8nLgDz",
+        "amount": 93.63,
+        "date": "2024-09-21",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Utsuwa Botanical Desig",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "dZBdEYwDLPspdLak1OrNhdEm3O9qg4uo6xX3X",
+        "amount": -59.99,
+        "date": "2024-09-16",
+        "category": [
+            "Shops",
+            "Pharmacies"
+        ],
+        "category_id": "19043000",
+        "merchant_name": "Duane Reade",
+        "payment_channel": "other",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "wP7a0BNAR8SpANz3JjZ5hv0zPA5xJMuRzj06k",
+        "amount": 114.37,
+        "date": "2024-09-15",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "O O Pizza Clover",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Webster Groves",
+            "region": "MO"
+        }
+    },
+    {
+        "transaction_id": "6AEp5qdReKhqgY0p4yV7SnNw4JYQx8TAz4goJ",
+        "amount": 15.0,
+        "date": "2024-09-14",
+        "category": [
+            "Community",
+            "Organizations and Associations",
+            "Charities and Non-Profits"
+        ],
+        "category_id": "12015003",
+        "merchant_name": "Hindu Temple Of St Lou",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Manchester",
+            "region": "MO"
+        }
+    },
+    {
+        "transaction_id": "LQ1z39kDqjumaqnQO3VMi0Zj5mD4LYhJOnbKz",
+        "amount": 14.18,
+        "date": "2024-09-13",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Ices Plain & Fancy",
+        "payment_channel": "in store",
+        "location": {
+            "city": "St. Louis",
+            "region": "MO"
+        }
+    },
+    {
+        "transaction_id": "DgEzwJXrxBhJnKxm7aPVt30yepj1XPfXL9xvN",
+        "amount": 50.0,
+        "date": "2024-09-12",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Piece Of Cake Moving Tel",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "1BApa65QnPu6jYyvemZ7iozNevAMydSY7ezBK",
+        "amount": 1.99,
+        "date": "2024-09-10",
+        "category": [
+            "Shops",
+            "Pharmacies"
+        ],
+        "category_id": "19043000",
+        "merchant_name": "Duane Reade",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "PLxzAY5BKnuMbRXDxZ7JSmY4LZv0adHONB0Qe",
+        "amount": 4.36,
+        "date": "2024-09-10",
+        "category": [
+            "Shops",
+            "Pharmacies"
+        ],
+        "category_id": "19043000",
+        "merchant_name": "Duane Reade",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "qdaA36yXr8TXZjRzmA5JHAVd9ZgQxMC107mZb",
+        "amount": 8.71,
+        "date": "2024-09-09",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Zurutto Ramen",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "Bo6znaZ9xPHM6kvV5R7bSEapQ1myk3FvbrPq1",
+        "amount": 12.63,
+        "date": "2024-09-09",
+        "category": [
+            "Food and Drink",
+            "Restaurants",
+            "Fast Food"
+        ],
+        "category_id": "13005032",
+        "merchant_name": "Chipotle Mexican Grill",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "3ygpJDZQnBUE3Yn7RQ0vuXMvR5L6V0hPgR3Z1",
+        "amount": 76.62,
+        "date": "2024-09-09",
+        "category": [
+            "Shops",
+            "Pharmacies"
+        ],
+        "category_id": "19043000",
+        "merchant_name": "Duane Reade",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "yBmJryNO48uP49nQm0K7T1Aj54bQkMtRBve18",
+        "amount": 14.66,
+        "date": "2024-09-08",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Sweetgreen",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": "WI"
+        }
+    },
+    {
+        "transaction_id": "KRDzB7ELP0sD4vAaBR7JczxyO37Q1Jcyo6aYw",
+        "amount": 13.99,
+        "date": "2024-09-07",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "Freese's Candy Shops",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Milwaukee",
+            "region": "WI"
+        }
+    },
+    {
+        "transaction_id": "kVrqLYBKyAcDokbaem1Ec0NDwdykBZhbenzwe",
+        "amount": 15.17,
+        "date": "2024-09-07",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "West Allis Cheese",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Milwaukee",
+            "region": "WI"
+        }
+    },
+    {
+        "transaction_id": "A5vzQ47a81u49pnjMP5bSm0AwgdRoEHw4zrgA",
+        "amount": 3.24,
+        "date": "2024-09-07",
+        "category": [
+            "Food and Drink",
+            "Restaurants",
+            "Coffee Shop"
+        ],
+        "category_id": "13005043",
+        "merchant_name": "Colectivo Coffee",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Milwaukee",
+            "region": "WI"
+        }
+    },
+    {
+        "transaction_id": "v1R4vqYag8h80kB3wRaXS4bzO0rpLMspeAxNr",
+        "amount": 13.16,
+        "date": "2024-09-06",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Potbelly Sandwich Shop",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Flushing",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "0qZp4wKan1CwYoz3yKEgcEZ4yxJ0ApF9qmZ8K",
+        "amount": 30.0,
+        "date": "2024-09-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Shinbashi",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "j98P6zqy3kuAgbow1mD4iLXZ6maxBjuv7JgOK",
+        "amount": 12.1,
+        "date": "2024-09-04",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "Magnolia Bakery",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "rw6vyL0gr8FAKEV5vwDpivPowKkNdMurDzqE4",
+        "amount": 2.49,
+        "date": "2024-09-03",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "axPzVYqwdLS5YjvzR7L8T5KnXaZQgDuKOmJY0",
+        "amount": 23.05,
+        "date": "2024-08-30",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Ramen Spot Lic",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "xqRxj3NOr7C0kE5KZJyRf1wnBkVPb8tmx9wr9",
+        "amount": 5600.0,
+        "date": "2024-08-30",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "JENzqg561vSZ56rXEzVMubXRmxrKLyS0DeJoa",
+        "amount": 34.51,
+        "date": "2024-08-26",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Noodles & Company",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Lakewood",
+            "region": "CO"
+        }
+    },
+    {
+        "transaction_id": "80ypm36axAS3DYvEPAMauo6RPvZrwzSY4PbQ5",
+        "amount": 29.05,
+        "date": "2024-08-24",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "Phillips 66",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Idaho Springs",
+            "region": "CO"
+        }
+    },
+    {
+        "transaction_id": "ZA9zZYdPXnhm6Ldn7Pa8iRBzXPDd0JT8aMYJ4",
+        "amount": 6.91,
+        "date": "2024-08-24",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "In-N-Out Burger",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Denver",
+            "region": "CO"
+        }
+    },
+    {
+        "transaction_id": "5kjpZP7RnySPAYQM3ne7Ty9g3EVeXvINx3j9B",
+        "amount": 230.72,
+        "date": "2024-08-23",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "Tom & Jerry's Liquors",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Denver",
+            "region": "CO"
+        }
+    },
+    {
+        "transaction_id": "oR9KmdgxrOsk09QPdbwpivx310VALNurADmZ4",
+        "amount": 449.91,
+        "date": "2024-08-23",
+        "category": [
+            "Shops",
+            "Supermarkets and Groceries"
+        ],
+        "category_id": "19047000",
+        "merchant_name": "King Soopers",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Denver",
+            "region": "CO"
+        }
+    },
+    {
+        "transaction_id": "bJ4zOYB6wDT5A6wqZnDpTdkjRnBpPQuPeXEwP",
+        "amount": 24.99,
+        "date": "2024-08-23",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "In-N-Out Burger",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Lakewood",
+            "region": "CO"
+        }
+    },
+    {
+        "transaction_id": "gbpLnYDqP3hAx3NVr0ROigz9O0EBkyC6kyeLK",
+        "amount": 14.15,
+        "date": "2024-08-18",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "C Bao",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "7vDeoBwaxkTMBevLk4wbSbB6kVr75qS8JoVjD",
+        "amount": 18.51,
+        "date": "2024-08-18",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "Ootoya Union Squar",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Fairview",
+            "region": "NJ"
+        }
+    },
+    {
+        "transaction_id": "9jdpgyLbxvuyZYR13qpwux8P3py5w6s6q3eDP",
+        "amount": 12.0,
+        "date": "2024-08-17",
+        "category": [
+            "Transfer",
+            "Third Party",
+            "Square"
+        ],
+        "category_id": "21010003",
+        "merchant_name": "Popup Bagels",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "V30zaY16XnF6gdXbvR4zirAqmRZxD1sn3b1wa",
+        "amount": 14.1,
+        "date": "2024-08-15",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Cafe Metro",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "O6bzkYaqynuByn5V7boes8ZoQbLma0spv0da4",
+        "amount": 4.36,
+        "date": "2024-08-15",
+        "category": [
+            "Recreation",
+            "Arts and Entertainment"
+        ],
+        "category_id": "17001000",
+        "merchant_name": "Shakespeare And Co.",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "Md5zyVQ1BnTr1J5KXM7gc5nx9N4qXju0aLZeO",
+        "amount": 16.66,
+        "date": "2024-08-13",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Simply Noodles",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "E7Bz68ZEdmI8kANze95ySvpyOdjA8ZudbVmkL",
+        "amount": 15.2,
+        "date": "2024-08-10",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Dont Call It Pizza Wien",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "R1mz0YwyAnh7nqMw6OEguKEoXOgJkbT9mMxQg",
+        "amount": 15.3,
+        "date": "2024-08-10",
+        "category": [
+            "Recreation",
+            "Arts and Entertainment"
+        ],
+        "category_id": "17001000",
+        "merchant_name": "Fiumicino Aeroporto Ss Fiumicino",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "QDOzvYd3kXi10bBXQw7ghEB7Aw3xmDF9qpYDe",
+        "amount": 15.3,
+        "date": "2024-08-10",
+        "category": [
+            "Recreation",
+            "Arts and Entertainment"
+        ],
+        "category_id": "17001000",
+        "merchant_name": "Fiumicino Aeroporto Ss Fiumicino",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "nEayPYKvAjSKRqbxJYdpirV3MRwKvesjvbRn6",
+        "amount": 65.59,
+        "date": "2024-08-09",
+        "category": [
+            "Travel",
+            "Lodging"
+        ],
+        "category_id": "22012000",
+        "merchant_name": "Steman Wien At",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "pQPkBwNAx8ujmdE9gy5pik7Ndm51xMSAx9E1j",
+        "amount": 35.52,
+        "date": "2024-08-09",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Caf Camus Wien At",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "XKRzJYqmXnUX5M8mqoOpHQ1KmovnV9IzL3AwM",
+        "amount": 2.63,
+        "date": "2024-08-09",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Wiener Linien",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "NwqzKO5P3nFMvkQoxZRmSROBmZNa4qTy71eJO",
+        "amount": 6.73,
+        "date": "2024-08-09",
+        "category": [
+            "Payment",
+            "Rent"
+        ],
+        "category_id": "16002000",
+        "merchant_name": "Der Mann",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "e5XwRY61Dquo5MDAOzqYuXApJzj9gDh4g8m9J",
+        "amount": 2.63,
+        "date": "2024-08-09",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Wiener Linien",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "Yk3z8YB1XnSpL9vjoR78hQ8yBRObZ1IzXKk77",
+        "amount": 5.25,
+        "date": "2024-08-09",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Wiener Linien",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "z3784KNOaVFPLOBJoREvTbZqNLgek8SMD60kN",
+        "amount": 25.62,
+        "date": "2024-08-08",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Dont Call It Pizza Wien",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "mMP31YyAk0hRgd0LQxqpuyqekg75npI8nLgEz",
+        "amount": 7.66,
+        "date": "2024-08-08",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Glaces Fenocchio Nice Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "dZBdEYwDLPspdLak1OrNhdEm3O9qg4uo6xXPX",
+        "amount": 5.47,
+        "date": "2024-08-08",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Fior Di Amarena Nice Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "wP7a0BNAR8SpANz3JjZ5hv0zPA5xJMuRzj0Jk",
+        "amount": 132.88,
+        "date": "2024-08-07",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Ikaro Nice Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "6AEp5qdReKhqgY0p4yV7SnNw4JYQx8TAz4gZJ",
+        "amount": 18.42,
+        "date": "2024-08-07",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Sas Mrm Nice Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "LQ1z39kDqjumaqnQO3VMi0Zj5mD4LYhJOnbjz",
+        "amount": 29.72,
+        "date": "2024-08-06",
+        "category": [
+            "Shops",
+            "Clothing and Accessories",
+            "Shoe Store"
+        ],
+        "category_id": "19012003",
+        "merchant_name": "Dejeuner Au Sole",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": "PA"
+        }
+    },
+    {
+        "transaction_id": "DgEzwJXrxBhJnKxm7aPVt30yepj1XPfXL9xQN",
+        "amount": 38.53,
+        "date": "2024-08-06",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Indian Lounge Nice Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "1BApa65QnPu6jYyvemZ7iozNevAMydSY7ezrK",
+        "amount": 58.66,
+        "date": "2024-08-06",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Resto Fish Bar 2.0",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "PLxzAY5BKnuMbRXDxZ7JSmY4LZv0adHONB05e",
+        "amount": 18.61,
+        "date": "2024-08-06",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Atelierdesjouets Nice Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "qdaA36yXr8TXZjRzmA5JHAVd9ZgQxMC107m5b",
+        "amount": 30.49,
+        "date": "2024-08-05",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": null,
+        "payment_channel": "in store",
+        "location": {
+            "city": "Relay",
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "Bo6znaZ9xPHM6kvV5R7bSEapQ1myk3FvbrPR1",
+        "amount": 89.72,
+        "date": "2024-08-05",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Ikaro Nice Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "3ygpJDZQnBUE3Yn7RQ0vuXMvR5L6V0hPgR3M1",
+        "amount": 7.87,
+        "date": "2024-08-05",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Cafe Brazza Bordeaux Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "yBmJryNO48uP49nQm0K7T1Aj54bQkMtRBveP8",
+        "amount": 11.58,
+        "date": "2024-08-04",
+        "category": [
+            "Shops",
+            "Department Stores"
+        ],
+        "category_id": "19018000",
+        "merchant_name": null,
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "KRDzB7ELP0sD4vAaBR7JczxyO37Q1Jcyo6aKw",
+        "amount": 17.48,
+        "date": "2024-08-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Le Temps D'un Ete Saint-emilionfr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "kVrqLYBKyAcDokbaem1Ec0NDwdykBZhbenzZe",
+        "amount": 23.82,
+        "date": "2024-08-04",
+        "category": [
+            "Travel",
+            "Rail"
+        ],
+        "category_id": "22015000",
+        "merchant_name": "TGV",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "A5vzQ47a81u49pnjMP5bSm0AwgdRoEHw4zrxA",
+        "amount": 29.5,
+        "date": "2024-08-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Azimuts Vins Saint Emilionfr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "v1R4vqYag8h80kB3wRaXS4bzO0rpLMspeAxPr",
+        "amount": 45.35,
+        "date": "2024-08-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "La Table Deruelle Bordeaux Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "j98P6zqy3kuAgbow1mD4iLXZ6maxBjuv7JgkK",
+        "amount": 126.75,
+        "date": "2024-08-03",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Le Carreau Bordeaux Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "rw6vyL0gr8FAKEV5vwDpivPowKkNdMurDzqj4",
+        "amount": 11.81,
+        "date": "2024-08-02",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Boul Legendre",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Paris",
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "4K0p815bn3U1LoyMnJzPhaNJneqyVOSD4vPzy",
+        "amount": 9.36,
+        "date": "2024-08-02",
+        "category": [
+            "Travel",
+            "Lodging"
+        ],
+        "category_id": "22012000",
+        "merchant_name": "Hotel Life Borde Bordeaux Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "axPzVYqwdLS5YjvzR7L8T5KnXaZQgDuKOmJ30",
+        "amount": 7.37,
+        "date": "2024-08-02",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Yann Couvreur Paris",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "xqRxj3NOr7C0kE5KZJyRf1wnBkVPb8tmx9wp9",
+        "amount": 8.68,
+        "date": "2024-08-01",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "Service Navigo",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "JENzqg561vSZ56rXEzVMubXRmxrKLyS0DeJ3a",
+        "amount": 107.29,
+        "date": "2024-08-01",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "Relais Entrecot Paris",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "80ypm36axAS3DYvEPAMauo6RPvZrwzSY4Pbk5",
+        "amount": 4.99,
+        "date": "2024-08-01",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Pretamanger Paris",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "ZA9zZYdPXnhm6Ldn7Pa8iRBzXPDd0JT8aMYP4",
+        "amount": 8.68,
+        "date": "2024-08-01",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Liberte Chaillot Paris",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "5kjpZP7RnySPAYQM3ne7Ty9g3EVeXvINx3jmB",
+        "amount": 11.29,
+        "date": "2024-08-01",
+        "category": [
+            "Travel",
+            "Lodging"
+        ],
+        "category_id": "22012000",
+        "merchant_name": "Hotel Le Richemo Paris Fr",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "oR9KmdgxrOsk09QPdbwpivx310VALNurADm04",
+        "amount": 8.71,
+        "date": "2024-07-31",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Zurutto Ramen",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "bJ4zOYB6wDT5A6wqZnDpTdkjRnBpPQuPeXEaP",
+        "amount": 6.4,
+        "date": "2024-07-31",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Salsaritas",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Newark",
+            "region": "NJ"
+        }
+    },
+    {
+        "transaction_id": "gbpLnYDqP3hAx3NVr0ROigz9O0EBkyC6kyeEK",
+        "amount": 2.49,
+        "date": "2024-07-31",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "7vDeoBwaxkTMBevLk4wbSbB6kVr75qS8JoVZD",
+        "amount": 12.95,
+        "date": "2024-07-31",
+        "category": [
+            "Food and Drink",
+            "Restaurants",
+            "Fast Food"
+        ],
+        "category_id": "13005032",
+        "merchant_name": "Smashburger",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Newark",
+            "region": "NJ"
+        }
+    },
+    {
+        "transaction_id": "9jdpgyLbxvuyZYR13qpwux8P3py5w6s6q3eJP",
+        "amount": 13.17,
+        "date": "2024-07-30",
+        "category": [
+            "Food and Drink",
+            "Restaurants",
+            "Fast Food"
+        ],
+        "category_id": "13005032",
+        "merchant_name": "Chipotle Mexican Grill",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "V30zaY16XnF6gdXbvR4zirAqmRZxD1sn3b1Ja",
+        "amount": 5600.0,
+        "date": "2024-07-30",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "O6bzkYaqynuByn5V7boes8ZoQbLma0spv0dP4",
+        "amount": 52.92,
+        "date": "2024-07-27",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The Up & Up",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "Md5zyVQ1BnTr1J5KXM7gc5nx9N4qXju0aLZgO",
+        "amount": 211.66,
+        "date": "2024-07-27",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "One White Street",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "E7Bz68ZEdmI8kANze95ySvpyOdjA8ZudbVmqL",
+        "amount": 30.0,
+        "date": "2024-07-27",
+        "category": [
+            "Food and Drink",
+            "Bar"
+        ],
+        "category_id": "13001000",
+        "merchant_name": "Amsterdam Ale House",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "R1mz0YwyAnh7nqMw6OEguKEoXOgJkbT9mMxrg",
+        "amount": 65.23,
+        "date": "2024-07-27",
+        "category": [
+            "Travel",
+            "Lodging"
+        ],
+        "category_id": "22012000",
+        "merchant_name": "Hotel Le Richemont Paris",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "QDOzvYd3kXi10bBXQw7ghEB7Aw3xmDF9qpYoe",
+        "amount": 310.94,
+        "date": "2024-07-27",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Paris",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "nEayPYKvAjSKRqbxJYdpirV3MRwKvesjvbRX6",
+        "amount": 39.75,
+        "date": "2024-07-26",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Gottino",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "pQPkBwNAx8ujmdE9gy5pik7Ndm51xMSAx9ELj",
+        "amount": 54.35,
+        "date": "2024-07-26",
+        "category": [
+            "Travel",
+            "Airlines and Aviation Services"
+        ],
+        "category_id": "22001000",
+        "merchant_name": "Wizz Air",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "XKRzJYqmXnUX5M8mqoOpHQ1KmovnV9IzL3AjM",
+        "amount": 151.43,
+        "date": "2024-07-26",
+        "category": [
+            "Travel",
+            "Airlines and Aviation Services"
+        ],
+        "category_id": "22001000",
+        "merchant_name": "Wizz Air",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "NwqzKO5P3nFMvkQoxZRmSROBmZNa4qTy71ezO",
+        "amount": 58.01,
+        "date": "2024-07-20",
+        "category": [
+            "Shops",
+            "Supermarkets and Groceries"
+        ],
+        "category_id": "19047000",
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "e5XwRY61Dquo5MDAOzqYuXApJzj9gDh4g8mQJ",
+        "amount": 175.78,
+        "date": "2024-07-20",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Abuqir",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Astoria",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "Yk3z8YB1XnSpL9vjoR78hQ8yBRObZ1IzXKk17",
+        "amount": 86.49,
+        "date": "2024-07-20",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "In Thursday Kitchen",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "z3784KNOaVFPLOBJoREvTbZqNLgek8SMD60NN",
+        "amount": 47.0,
+        "date": "2024-07-20",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Lean Harvest Kitchen",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "mMP31YyAk0hRgd0LQxqpuyqekg75npI8nLgqz",
+        "amount": 8.69,
+        "date": "2024-07-20",
+        "category": [
+            "Food and Drink"
+        ],
+        "category_id": "13000000",
+        "merchant_name": "Cold Stone Creamery",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "dZBdEYwDLPspdLak1OrNhdEm3O9qg4uo6xXEX",
+        "amount": 37.99,
+        "date": "2024-07-19",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "Two Wheels",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "wP7a0BNAR8SpANz3JjZ5hv0zPA5xJMuRzj09k",
+        "amount": 12.74,
+        "date": "2024-07-18",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "Amorino Upper",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "6AEp5qdReKhqgY0p4yV7SnNw4JYQx8TAz4gvJ",
+        "amount": 75.0,
+        "date": "2024-07-17",
+        "category": [
+            "Healthcare",
+            "Healthcare Services",
+            "Hospitals, Clinics and Medical Centers"
+        ],
+        "category_id": "14001010",
+        "merchant_name": "New York Cat Hospital",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "LQ1z39kDqjumaqnQO3VMi0Zj5mD4LYhJOnbAz",
+        "amount": 10.89,
+        "date": "2024-07-14",
+        "category": [
+            "Service",
+            "Food and Beverage",
+            "Catering"
+        ],
+        "category_id": "18021002",
+        "merchant_name": "Slice Catering",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Brooklyn",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "DgEzwJXrxBhJnKxm7aPVt30yepj1XPfXL9xnN",
+        "amount": 16.33,
+        "date": "2024-07-14",
+        "category": [
+            "Service",
+            "Food and Beverage",
+            "Catering"
+        ],
+        "category_id": "18021002",
+        "merchant_name": "Slice Catering",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Brooklyn",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "1BApa65QnPu6jYyvemZ7iozNevAMydSY7ezRK",
+        "amount": 4.9,
+        "date": "2024-07-14",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Mast Market",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "PLxzAY5BKnuMbRXDxZ7JSmY4LZv0adHONB0ne",
+        "amount": 37.68,
+        "date": "2024-07-13",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The White Bull",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Decatur",
+            "region": "GA"
+        }
+    },
+    {
+        "transaction_id": "nEayPYKvAjSKRqbxJYdpirV3MRwKvesjvbRLr",
+        "amount": 9.67,
+        "date": "2024-07-13",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "SweetWater Brewing Co",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Atlanta",
+            "region": "GA"
+        }
+    },
+    {
+        "transaction_id": "pQPkBwNAx8ujmdE9gy5pik7Ndm51xMSAx9Ezq",
+        "amount": 12.99,
+        "date": "2024-07-13",
+        "category": [
+            "Travel",
+            "Parking"
+        ],
+        "category_id": "22013000",
+        "merchant_name": "Parking",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": "IL"
+        }
+    },
+    {
+        "transaction_id": "XKRzJYqmXnUX5M8mqoOpHQ1KmovnV9IzL3AqE",
+        "amount": 43.56,
+        "date": "2024-07-13",
+        "category": [
+            "Transfer",
+            "Third Party",
+            "Square"
+        ],
+        "category_id": "21010003",
+        "merchant_name": "Revolution Doughnuts",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Atlanta",
+            "region": "GA"
+        }
+    },
+    {
+        "transaction_id": "NwqzKO5P3nFMvkQoxZRmSROBmZNa4qTy71evk",
+        "amount": 126.7,
+        "date": "2024-07-13",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Tessa",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "e5XwRY61Dquo5MDAOzqYuXApJzj9gDh4g8mQO",
+        "amount": 15.79,
+        "date": "2024-07-12",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Fox Bros Bbq Catering",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Atlanta",
+            "region": "GA"
+        }
+    },
+    {
+        "transaction_id": "Yk3z8YB1XnSpL9vjoR78hQ8yBRObZ1IzXKk1X",
+        "amount": 4.43,
+        "date": "2024-07-12",
+        "category": [
+            "Food and Drink",
+            "Restaurants",
+            "Coffee Shop"
+        ],
+        "category_id": "13005043",
+        "merchant_name": "Blue Donkey Coffee",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Atlanta",
+            "region": "GA"
+        }
+    },
+    {
+        "transaction_id": "z3784KNOaVFPLOBJoREvTbZqNLgek8SMD60Nb",
+        "amount": 27.22,
+        "date": "2024-07-12",
+        "category": [
+            "Transfer",
+            "Third Party",
+            "Square"
+        ],
+        "category_id": "21010003",
+        "merchant_name": "Revolution Doughnuts",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Atlanta",
+            "region": "GA"
+        }
+    },
+    {
+        "transaction_id": "mMP31YyAk0hRgd0LQxqpuyqekg75npI8nLgq7",
+        "amount": 15.61,
+        "date": "2024-07-11",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "PONKO Chicken",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Atlanta",
+            "region": "GA"
+        }
+    },
+    {
+        "transaction_id": "dZBdEYwDLPspdLak1OrNhdEm3O9qg4uo6xXEv",
+        "amount": 11.92,
+        "date": "2024-07-10",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "72 Eatery",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "wP7a0BNAR8SpANz3JjZ5hv0zPA5xJMuRzj09p",
+        "amount": 7.0,
+        "date": "2024-07-10",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Dippin Dots & Doc",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "6AEp5qdReKhqgY0p4yV7SnNw4JYQx8TAz4gvB",
+        "amount": 17.42,
+        "date": "2024-07-08",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Zurutto Ramen",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "LQ1z39kDqjumaqnQO3VMi0Zj5mD4LYhJOnbAk",
+        "amount": 13.08,
+        "date": "2024-07-07",
+        "category": [
+            "Food and Drink",
+            "Restaurants",
+            "Coffee Shop"
+        ],
+        "category_id": "13005043",
+        "merchant_name": "Casasalvo Coffees",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "DgEzwJXrxBhJnKxm7aPVt30yepj1XPfXL9xne",
+        "amount": 35.93,
+        "date": "2024-07-07",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Shuyas",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "1BApa65QnPu6jYyvemZ7iozNevAMydSY7ezRe",
+        "amount": 13.24,
+        "date": "2024-07-06",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Xi'an Famous Food",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "PLxzAY5BKnuMbRXDxZ7JSmY4LZv0adHONB0nd",
+        "amount": 9.79,
+        "date": "2024-07-06",
+        "category": [
+            "Transfer",
+            "Third Party",
+            "Square"
+        ],
+        "category_id": "21010003",
+        "merchant_name": "Manhattan",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "qdaA36yXr8TXZjRzmA5JHAVd9ZgQxMC107mOa",
+        "amount": 25.97,
+        "date": "2024-07-06",
+        "category": [
+            "Transfer",
+            "Third Party",
+            "Square"
+        ],
+        "category_id": "21010003",
+        "merchant_name": "Manhattan",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "3ygpJDZQnBUE3Yn7RQ0vuXMvR5L6V0hPgR3YK",
+        "amount": 2.49,
+        "date": "2024-07-02",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "yBmJryNO48uP49nQm0K7T1Aj54bQkMtRBvekp",
+        "amount": 5600.0,
+        "date": "2024-07-01",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "KRDzB7ELP0sD4vAaBR7JczxyO37Q1Jcyo6a3y",
+        "amount": 3.31,
+        "date": "2024-06-30",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "16 Handles",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "kVrqLYBKyAcDokbaem1Ec0NDwdykBZhbenzxv",
+        "amount": 13.96,
+        "date": "2024-06-30",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Artichoke Basille's Pizza",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "A5vzQ47a81u49pnjMP5bSm0AwgdRoEHw4zr8b",
+        "amount": 119.2,
+        "date": "2024-06-29",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The Trailer Park Lounge",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "v1R4vqYag8h80kB3wRaXS4bzO0rpLMspeAxOY",
+        "amount": 7972.35,
+        "date": "2024-06-19",
+        "category": [
+            "Transfer",
+            "Internal Account Transfer"
+        ],
+        "category_id": "21001000",
+        "merchant_name": null,
+        "payment_channel": "other",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "0qZp4wKan1CwYoz3yKEgcEZ4yxJ0ApF9qmZP5",
+        "amount": 135.11,
+        "date": "2024-06-16",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Saravanaa Bhavan",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "j98P6zqy3kuAgbow1mD4iLXZ6maxBjuv7Jg83",
+        "amount": 14.43,
+        "date": "2024-06-15",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": null,
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "rw6vyL0gr8FAKEV5vwDpivPowKkNdMurDzqde",
+        "amount": 21.0,
+        "date": "2024-06-15",
+        "category": [
+            "Transfer",
+            "Third Party",
+            "Square"
+        ],
+        "category_id": "21010003",
+        "merchant_name": "Popup Bagels",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "4K0p815bn3U1LoyMnJzPhaNJneqyVOSD4vPM7",
+        "amount": 33.14,
+        "date": "2024-06-14",
+        "category": [
+            "Shops",
+            "Supermarkets and Groceries"
+        ],
+        "category_id": "19047000",
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "axPzVYqwdLS5YjvzR7L8T5KnXaZQgDuKOmJwz",
+        "amount": 68.69,
+        "date": "2024-06-10",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Mareluna",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "xqRxj3NOr7C0kE5KZJyRf1wnBkVPb8tmx9wkg",
+        "amount": 16.66,
+        "date": "2024-06-08",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Simply Noodles",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "JENzqg561vSZ56rXEzVMubXRmxrKLyS0DeJBV",
+        "amount": -5.46,
+        "date": "2024-06-05",
+        "category": [
+            "Transfer",
+            "Credit"
+        ],
+        "category_id": "21005000",
+        "merchant_name": null,
+        "payment_channel": "other",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "80ypm36axAS3DYvEPAMauo6RPvZrwzSY4PbR9",
+        "amount": 4.86,
+        "date": "2024-06-05",
+        "category": [
+            "Shops"
+        ],
+        "category_id": "19000000",
+        "merchant_name": "Store",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Naperville",
+            "region": "IL"
+        }
+    },
+    {
+        "transaction_id": "ZA9zZYdPXnhm6Ldn7Pa8iRBzXPDd0JT8aMY3X",
+        "amount": 5.46,
+        "date": "2024-06-05",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Bolt.eu",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "5kjpZP7RnySPAYQM3ne7Ty9g3EVeXvINx3jO5",
+        "amount": 6.0,
+        "date": "2024-06-05",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Dippin Dots & Doc",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "oR9KmdgxrOsk09QPdbwpivx310VALNurADm9Z",
+        "amount": -0.52,
+        "date": "2024-06-04",
+        "category": [
+            "Transfer",
+            "Credit"
+        ],
+        "category_id": "21005000",
+        "merchant_name": null,
+        "payment_channel": "other",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "bJ4zOYB6wDT5A6wqZnDpTdkjRnBpPQuPeXEja",
+        "amount": -0.49,
+        "date": "2024-06-04",
+        "category": [
+            "Transfer",
+            "Credit"
+        ],
+        "category_id": "21005000",
+        "merchant_name": null,
+        "payment_channel": "other",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "gbpLnYDqP3hAx3NVr0ROigz9O0EBkyC6kyezx",
+        "amount": -0.46,
+        "date": "2024-06-04",
+        "category": [
+            "Transfer",
+            "Credit"
+        ],
+        "category_id": "21005000",
+        "merchant_name": null,
+        "payment_channel": "other",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "7vDeoBwaxkTMBevLk4wbSbB6kVr75qS8JoV11",
+        "amount": -0.44,
+        "date": "2024-06-04",
+        "category": [
+            "Transfer",
+            "Credit"
+        ],
+        "category_id": "21005000",
+        "merchant_name": null,
+        "payment_channel": "other",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "V30zaY16XnF6gdXbvR4zirAqmRZxD1sn3b19v",
+        "amount": 0.44,
+        "date": "2024-06-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Bolt.eu",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "O6bzkYaqynuByn5V7boes8ZoQbLma0spv0d67",
+        "amount": 0.46,
+        "date": "2024-06-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Bolt.eu",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "Md5zyVQ1BnTr1J5KXM7gc5nx9N4qXju0aLZjJ",
+        "amount": 0.49,
+        "date": "2024-06-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Bolt.eu",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "E7Bz68ZEdmI8kANze95ySvpyOdjA8ZudbVmyA",
+        "amount": 0.52,
+        "date": "2024-06-04",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Bolt.eu",
+        "payment_channel": "online",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "R1mz0YwyAnh7nqMw6OEguKEoXOgJkbT9mMxvz",
+        "amount": 84.4,
+        "date": "2024-06-04",
+        "category": [
+            "Healthcare",
+            "Healthcare Services",
+            "Dentists"
+        ],
+        "category_id": "14001012",
+        "merchant_name": "Naperville Smiles Dent",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Naperville",
+            "region": "IL"
+        }
+    },
+    {
+        "transaction_id": "QDOzvYd3kXi10bBXQw7ghEB7Aw3xmDF9qpYZm",
+        "amount": 2.49,
+        "date": "2024-05-31",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "nEayPYKvAjSKRqbxJYdpirV3MRwKvesjvbRdr",
+        "amount": 5600.0,
+        "date": "2024-05-30",
+        "category": [
+            "Travel",
+            "Gas Stations"
+        ],
+        "category_id": "22009000",
+        "merchant_name": "BP",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "pQPkBwNAx8ujmdE9gy5pik7Ndm51xMSAx9EBq",
+        "amount": 74.22,
+        "date": "2024-05-27",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "The Harold",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "XKRzJYqmXnUX5M8mqoOpHQ1KmovnV9IzL3AeE",
+        "amount": 7.61,
+        "date": "2024-05-26",
+        "category": [
+            "Shops",
+            "Hardware Store"
+        ],
+        "category_id": "19030000",
+        "merchant_name": "Gartners Hardware",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "NwqzKO5P3nFMvkQoxZRmSROBmZNa4qTy71eqk",
+        "amount": 8.69,
+        "date": "2024-05-26",
+        "category": [
+            "Food and Drink"
+        ],
+        "category_id": "13000000",
+        "merchant_name": "Cold Stone Creamery",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": null
+        }
+    },
+    {
+        "transaction_id": "e5XwRY61Dquo5MDAOzqYuXApJzj9gDh4g8mAO",
+        "amount": 5.4,
+        "date": "2024-05-25",
+        "category": [
+            "Shops",
+            "Food and Beverage Store"
+        ],
+        "category_id": "19025000",
+        "merchant_name": "16 Handles",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "Yk3z8YB1XnSpL9vjoR78hQ8yBRObZ1IzXKkRX",
+        "amount": 171.48,
+        "date": "2024-05-25",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Abuqir",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Astoria",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "z3784KNOaVFPLOBJoREvTbZqNLgek8SMD60Vb",
+        "amount": 21.91,
+        "date": "2024-05-24",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Mexicue",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "mMP31YyAk0hRgd0LQxqpuyqekg75npI8nLgz7",
+        "amount": 109.0,
+        "date": "2024-05-21",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Don Angie",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "kVrqLYBKyAcDokbaem1KSdkvR8wPV7HbL5RmE",
+        "amount": 103.81,
+        "date": "2024-10-30",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Mughlai Indian Cuisine",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "80ypm36axAS3DYvEPAMdhab7BLroBEIpdDBNA",
+        "amount": 65.97,
+        "date": "2024-10-29",
+        "category": [
+            "Shops",
+            "Department Stores"
+        ],
+        "category_id": "19018000",
+        "merchant_name": "Saks OFF 5TH",
+        "payment_channel": "in store",
+        "location": {
+            "city": null,
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "ZA9zZYdPXnhm6Ldn7PaATg6NOqdROjSX0mjNE",
+        "amount": 11.68,
+        "date": "2024-10-27",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Tacoria",
+        "payment_channel": "in store",
+        "location": {
+            "city": "Montclair",
+            "region": "NJ"
+        }
+    },
+    {
+        "transaction_id": "5kjpZP7RnySPAYQM3neNSazxKjeyKNIyqv1ez",
+        "amount": 19.05,
+        "date": "2024-10-27",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "7th Street Burger",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "oR9KmdgxrOsk09QPdbw8TgrEmRAvm5Sp8wyYP",
+        "amount": 36.04,
+        "date": "2024-10-26",
+        "category": [
+            "Shops",
+            "Supermarkets and Groceries"
+        ],
+        "category_id": "19047000",
+        "merchant_name": "H Mart",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    },
+    {
+        "transaction_id": "7vDeoBwaxkTMBevLk4wasdom8M7b8QcwyeEbj",
+        "amount": 32.99,
+        "date": "2024-10-25",
+        "category": [
+            "Food and Drink",
+            "Restaurants"
+        ],
+        "category_id": "13005000",
+        "merchant_name": "Cpyang",
+        "payment_channel": "in store",
+        "location": {
+            "city": "New York",
+            "region": "NY"
+        }
+    }
+]

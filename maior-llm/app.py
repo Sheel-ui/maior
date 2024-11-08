@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 origins = [
-    "http://localhost:5173",  # Add your frontend's URL here (React, for example)
+    "http://localhost:5173",
     "http://localhost:8080",
 
 ]

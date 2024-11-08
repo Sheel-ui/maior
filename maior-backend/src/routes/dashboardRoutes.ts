@@ -1,6 +1,6 @@
 import { Router, Request, Response } from "express";
 import ensureAuthenticated from "../middleware/authMiddleware";
-import { getAccountId, getBarData } from "../controllers/chartController";
+import { getAccountId, getBarData, getLineData } from "../controllers/chartController";
 
 const router: Router = Router();
 
@@ -19,5 +19,14 @@ router.get(
 		await getBarData(req, res);
 	}
 );
+
+router.get(
+	"/line",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		await getLineData(req, res);
+	}
+);
+
 
 export default router;

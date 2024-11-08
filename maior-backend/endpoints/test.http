@@ -19,6 +19,18 @@ GET {{baseUrl}}/items/
 Accept: application/json
 
 ###
+# Get all items
+GET {{baseUrl}}/test
+Accept: application/json
+
+###
+# Get all items
+GET {{baseUrl}}/time-series
+Accept: application/json
+
+
+
+###
 # Get an item by ID
 GET {{baseUrl}}/items/2
 Accept: application/json
@@ -32,7 +44,7 @@ Accept: application/json
 {
   "name": "Updated Sample Item",
   "description": "This item has been updated",
-  "price": 12.99,
+  "price": 123,
   "quantity": 10
 }
 

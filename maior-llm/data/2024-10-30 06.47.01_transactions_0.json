@@ -1,0 +1,370 @@
+{
+    "transactions_update_status": "HISTORICAL_UPDATE_COMPLETE",
+    "accounts": [
+        {
+            "account_id": "0qZp4wKan1CwYoz3yKEgcEZVAmDDk4Sr7EYXK",
+            "balances": {
+                "available": 27275.0,
+                "current": 2724.85,
+                "limit": 30000.0,
+                "iso_currency_code": "USD",
+                "unofficial_currency_code": null
+            },
+            "mask": "5443",
+            "name": "BILT WORLD ELITE MASTERCARD\u00ae ...5443",
+            "official_name": "BILT WORLD ELITE MASTERCARD\u00ae ...5443",
+            "type": "credit",
+            "subtype": "credit card"
+        }
+    ],
+    "added": [
+        {
+            "account_id": "0qZp4wKan1CwYoz3yKEgcEZVAmDDk4Sr7EYXK",
+            "account_owner": null,
+            "amount": 65.97,
+            "authorized_date": "2024-10-29",
+            "authorized_datetime": null,
+            "category": [
+                "Shops",
+                "Department Stores"
+            ],
+            "category_id": "19018000",
+            "check_number": null,
+            "counterparties": [
+                {
+                    "name": "Saks OFF 5TH",
+                    "type": "merchant",
+                    "website": "saksoff5th.com",
+                    "logo_url": "https://plaid-merchant-logos.plaid.com/saks_off_5th_1714.png",
+                    "confidence_level": "VERY_HIGH",
+                    "entity_id": "D35z7yv1kVomgE726YKENAoL5eLKdqMeE0QjR",
+                    "phone_number": null
+                }
+            ],
+            "date": "2024-10-29",
+            "datetime": null,
+            "iso_currency_code": "USD",
+            "location": {
+                "address": null,
+                "city": null,
+                "region": "NY",
+                "postal_code": null,
+                "country": null,
+                "lat": null,
+                "lon": null,
+                "store_number": null
+            },
+            "logo_url": "https://plaid-merchant-logos.plaid.com/saks_off_5th_1714.png",
+            "merchant_entity_id": "D35z7yv1kVomgE726YKENAoL5eLKdqMeE0QjR",
+            "merchant_name": "Saks OFF 5TH",
+            "name": "SAKS OFF 5TH",
+            "payment_channel": "in store",
+            "payment_meta": {
+                "reference_number": null,
+                "ppd_id": null,
+                "payee": null,
+                "by_order_of": null,
+                "payer": null,
+                "payment_method": null,
+                "payment_processor": null,
+                "reason": null
+            },
+            "pending": false,
+            "pending_transaction_id": null,
+            "personal_finance_category": {
+                "confidence_level": "HIGH",
+                "detailed": "GENERAL_MERCHANDISE_CLOTHING_AND_ACCESSORIES",
+                "primary": "GENERAL_MERCHANDISE"
+            },
+            "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_GENERAL_MERCHANDISE.png",
+            "transaction_code": null,
+            "transaction_id": "80ypm36axAS3DYvEPAMdhab7BLroBEIpdDBNA",
+            "transaction_type": "place",
+            "unofficial_currency_code": null,
+            "website": "saksoff5th.com"
+        },
+        {
+            "account_id": "0qZp4wKan1CwYoz3yKEgcEZVAmDDk4Sr7EYXK",
+            "account_owner": null,
+            "amount": 11.68,
+            "authorized_date": "2024-10-27",
+            "authorized_datetime": null,
+            "category": [
+                "Food and Drink",
+                "Restaurants"
+            ],
+            "category_id": "13005000",
+            "check_number": null,
+            "counterparties": [
+                {
+                    "name": "Tacoria",
+                    "type": "merchant",
+                    "website": null,
+                    "logo_url": null,
+                    "confidence_level": "VERY_HIGH",
+                    "entity_id": null,
+                    "phone_number": null
+                },
+                {
+                    "name": "Toast",
+                    "type": "payment_terminal",
+                    "website": "pos.toasttab.com",
+                    "logo_url": "https://plaid-counterparty-logos.plaid.com/toast_182.png",
+                    "confidence_level": "VERY_HIGH",
+                    "entity_id": "VmnapWdRwMn50bwvEaKZRKNkQXW1LvNrwdLeW",
+                    "phone_number": null
+                }
+            ],
+            "date": "2024-10-27",
+            "datetime": null,
+            "iso_currency_code": "USD",
+            "location": {
+                "address": "367 Bloomfield Ave",
+                "city": "Montclair",
+                "region": "NJ",
+                "postal_code": "07042",
+                "country": null,
+                "lat": 40.812279,
+                "lon": -74.215065,
+                "store_number": null
+            },
+            "logo_url": null,
+            "merchant_entity_id": null,
+            "merchant_name": "Tacoria",
+            "name": "TST* TACORIA- MONTCLAI",
+            "payment_channel": "in store",
+            "payment_meta": {
+                "reference_number": null,
+                "ppd_id": null,
+                "payee": null,
+                "by_order_of": null,
+                "payer": null,
+                "payment_method": null,
+                "payment_processor": null,
+                "reason": null
+            },
+            "pending": false,
+            "pending_transaction_id": null,
+            "personal_finance_category": {
+                "confidence_level": "MEDIUM",
+                "detailed": "FOOD_AND_DRINK_RESTAURANT",
+                "primary": "FOOD_AND_DRINK"
+            },
+            "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+            "transaction_code": null,
+            "transaction_id": "ZA9zZYdPXnhm6Ldn7PaATg6NOqdROjSX0mjNE",
+            "transaction_type": "place",
+            "unofficial_currency_code": null,
+            "website": null
+        },
+        {
+            "account_id": "0qZp4wKan1CwYoz3yKEgcEZVAmDDk4Sr7EYXK",
+            "account_owner": null,
+            "amount": 19.05,
+            "authorized_date": "2024-10-27",
+            "authorized_datetime": null,
+            "category": [
+                "Food and Drink",
+                "Restaurants"
+            ],
+            "category_id": "13005000",
+            "check_number": null,
+            "counterparties": [
+                {
+                    "name": "7th Street Burger",
+                    "type": "merchant",
+                    "website": null,
+                    "logo_url": null,
+                    "confidence_level": "VERY_HIGH",
+                    "entity_id": null,
+                    "phone_number": null
+                },
+                {
+                    "name": "Toast",
+                    "type": "payment_terminal",
+                    "website": "pos.toasttab.com",
+                    "logo_url": "https://plaid-counterparty-logos.plaid.com/toast_182.png",
+                    "confidence_level": "VERY_HIGH",
+                    "entity_id": "VmnapWdRwMn50bwvEaKZRKNkQXW1LvNrwdLeW",
+                    "phone_number": null
+                }
+            ],
+            "date": "2024-10-27",
+            "datetime": null,
+            "iso_currency_code": "USD",
+            "location": {
+                "address": null,
+                "city": "New York",
+                "region": "NY",
+                "postal_code": null,
+                "country": null,
+                "lat": null,
+                "lon": null,
+                "store_number": null
+            },
+            "logo_url": null,
+            "merchant_entity_id": null,
+            "merchant_name": "7th Street Burger",
+            "name": "TST* 7TH STREET BURGER",
+            "payment_channel": "in store",
+            "payment_meta": {
+                "reference_number": null,
+                "ppd_id": null,
+                "payee": null,
+                "by_order_of": null,
+                "payer": null,
+                "payment_method": null,
+                "payment_processor": null,
+                "reason": null
+            },
+            "pending": false,
+            "pending_transaction_id": null,
+            "personal_finance_category": {
+                "confidence_level": "MEDIUM",
+                "detailed": "FOOD_AND_DRINK_RESTAURANT",
+                "primary": "FOOD_AND_DRINK"
+            },
+            "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+            "transaction_code": null,
+            "transaction_id": "5kjpZP7RnySPAYQM3neNSazxKjeyKNIyqv1ez",
+            "transaction_type": "place",
+            "unofficial_currency_code": null,
+            "website": null
+        },
+        {
+            "account_id": "0qZp4wKan1CwYoz3yKEgcEZVAmDDk4Sr7EYXK",
+            "account_owner": null,
+            "amount": 36.04,
+            "authorized_date": "2024-10-26",
+            "authorized_datetime": null,
+            "category": [
+                "Shops",
+                "Supermarkets and Groceries"
+            ],
+            "category_id": "19047000",
+            "check_number": null,
+            "counterparties": [
+                {
+                    "name": "H Mart",
+                    "type": "merchant",
+                    "website": "hmart.com",
+                    "logo_url": "https://plaid-merchant-logos.plaid.com/h_mart_465.png",
+                    "confidence_level": "VERY_HIGH",
+                    "entity_id": "prWLmpV8OY0qpzd66VQ29O7AawOaQoBBy2jr8",
+                    "phone_number": null
+                }
+            ],
+            "date": "2024-10-26",
+            "datetime": null,
+            "iso_currency_code": "USD",
+            "location": {
+                "address": null,
+                "city": "New York",
+                "region": "NY",
+                "postal_code": null,
+                "country": null,
+                "lat": null,
+                "lon": null,
+                "store_number": null
+            },
+            "logo_url": "https://plaid-merchant-logos.plaid.com/h_mart_465.png",
+            "merchant_entity_id": "prWLmpV8OY0qpzd66VQ29O7AawOaQoBBy2jr8",
+            "merchant_name": "H Mart",
+            "name": "H MART",
+            "payment_channel": "in store",
+            "payment_meta": {
+                "reference_number": null,
+                "ppd_id": null,
+                "payee": null,
+                "by_order_of": null,
+                "payer": null,
+                "payment_method": null,
+                "payment_processor": null,
+                "reason": null
+            },
+            "pending": false,
+            "pending_transaction_id": null,
+            "personal_finance_category": {
+                "confidence_level": "HIGH",
+                "detailed": "FOOD_AND_DRINK_GROCERIES",
+                "primary": "FOOD_AND_DRINK"
+            },
+            "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+            "transaction_code": null,
+            "transaction_id": "oR9KmdgxrOsk09QPdbw8TgrEmRAvm5Sp8wyYP",
+            "transaction_type": "place",
+            "unofficial_currency_code": null,
+            "website": "hmart.com"
+        },
+        {
+            "account_id": "0qZp4wKan1CwYoz3yKEgcEZVAmDDk4Sr7EYXK",
+            "account_owner": null,
+            "amount": 32.99,
+            "authorized_date": "2024-10-25",
+            "authorized_datetime": null,
+            "category": [
+                "Food and Drink",
+                "Restaurants"
+            ],
+            "category_id": "13005000",
+            "check_number": null,
+            "counterparties": [
+                {
+                    "name": "Cpyang",
+                    "type": "merchant",
+                    "website": null,
+                    "logo_url": null,
+                    "confidence_level": "LOW",
+                    "entity_id": null,
+                    "phone_number": null
+                }
+            ],
+            "date": "2024-10-25",
+            "datetime": null,
+            "iso_currency_code": "USD",
+            "location": {
+                "address": null,
+                "city": "New York",
+                "region": "NY",
+                "postal_code": null,
+                "country": null,
+                "lat": null,
+                "lon": null,
+                "store_number": null
+            },
+            "logo_url": null,
+            "merchant_entity_id": null,
+            "merchant_name": "Cpyang",
+            "name": "CPYANG",
+            "payment_channel": "in store",
+            "payment_meta": {
+                "reference_number": null,
+                "ppd_id": null,
+                "payee": null,
+                "by_order_of": null,
+                "payer": null,
+                "payment_method": null,
+                "payment_processor": null,
+                "reason": null
+            },
+            "pending": false,
+            "pending_transaction_id": null,
+            "personal_finance_category": {
+                "confidence_level": "LOW",
+                "detailed": "FOOD_AND_DRINK_RESTAURANT",
+                "primary": "FOOD_AND_DRINK"
+            },
+            "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+            "transaction_code": null,
+            "transaction_id": "7vDeoBwaxkTMBevLk4wasdom8M7b8QcwyeEbj",
+            "transaction_type": "place",
+            "unofficial_currency_code": null,
+            "website": null
+        }
+    ],
+    "modified": [],
+    "removed": [],
+    "next_cursor": "CAESJTd2RGVvQndheGtUTUJldkxrNHdhc2RvbThNN2I4UWN3eWVFYmoaCwjWrIe5BhCo0Jw7IgsI1qyHuQYQqNCcOyoLCNash7kGEKjQnDs=",
+    "has_more": false,
+    "request_id": "OEnFpqjC7IgpmvF"
+}
