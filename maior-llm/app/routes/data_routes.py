@@ -51,3 +51,7 @@ async def get_category_data(month: int):
 @router.get("/channel/{month}")
 async def get_channel_data(month: int):
     return aggregate_channel_by_month(transaction_list["transactions"],month)
+
+@router.get("/word/{tag}")
+async def get_word_data(tag):
+    return aggregate_category_by_time_period(transaction_list["transactions"],tag)

@@ -71,4 +71,14 @@ router.get(
 	}
 );
 
+router.get(
+	"/word/:id",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		const { id } = req.params;
+		await getGraphData(req, res, `word/${id}`);
+	}
+);
+
+
 export default router;

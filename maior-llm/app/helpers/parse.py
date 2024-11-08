@@ -296,3 +296,37 @@ def aggregate_channel_by_month(transactions, month):
             channel_totals[channel] += transaction["amount"]
     result = [{"channel": channel, "amount": round(total, 2)} for channel, total in channel_totals.items()]
     return result
+
+def filter_transactions_by_date(transactions, start_date, end_date):
+    filtered = []
+    for transaction in transactions:
+        if isinstance(transaction["date"], str):
+            transaction_date = datetime.strptime(transaction["date"], "%Y-%m-%d")
+        else:
+            transaction_date = transaction["date"]
+        if start_date <= transaction_date <= end_date:
+            filtered.append(transaction)
+    return filtered
+
+def aggregate_category_by_time_period(transactions, timeframe):
+    
+    today = datetime.today()
+    end_date = today
+    if timeframe == "week":      
+        start_date = today - timedelta(days=7)
+    elif timeframe == "month":
+        start_date = today - timedelta(days=30)
+    elif timeframe == "quarter":
+        start_date = today - timedelta(days=90)
+    elif timeframe == "half":
+        start_date = today - timedelta(days=180) 
+
+    filtered_transactions = filter_transactions_by_date(transactions, start_date, end_date)
+    category_totals = defaultdict(float)
+    for transaction in filtered_transactions:
+        for category in transaction["category"]:
+            category_totals[category] += transaction["amount"]
+    word_cloud_data = [{"value": category, "count": round(amount, 2)} for category, amount in category_totals.items()]
+    
+    top_20_word_cloud_data = sorted(word_cloud_data, key=lambda x: x["count"], reverse=True)[:10]
+    return top_20_word_cloud_data
