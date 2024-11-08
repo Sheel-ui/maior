@@ -5,15 +5,9 @@ export default function Badge() {
 
 	useEffect(() => {
 		const fetchAccountDetails = async () => {
-			const token = localStorage.getItem("token");
-			if (!token) {
-				console.error("Token not found");
-				return;
-			}
 			try {
-				const accountId = await getAccountId(token);
+				const accountId = await getAccountId();
 				setAccountDetails(accountId);
-				console.log("Account details:", accountId);
 			} catch (error) {
 				console.error(error);
 			}
