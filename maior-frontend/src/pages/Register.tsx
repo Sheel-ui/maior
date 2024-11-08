@@ -1,0 +1,141 @@
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { Button } from "@/components/ui/button";
+import {
+	Form,
+	FormControl,
+	FormField,
+	FormItem,
+	FormLabel,
+	FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Link, useNavigate } from "react-router-dom";
+import { LoadingSpinner } from "@/components/custom/Spinner";
+import registerSchema from "@/schemes/registerScheme";
+import { useState } from "react";
+import { registerUser } from "@/services/authService";
+
+export default function Register() {
+	const [loading, setLoading] = useState(false);
+	const [result, setResult] = useState("");
+	const navigate = useNavigate();
+
+	const form = useForm<z.infer<typeof registerSchema>>({
+		resolver: zodResolver(registerSchema),
+		defaultValues: {
+			name: "",
+			email: "",
+			password: "",
+		},
+	});
+
+	const onSubmit = async (values: z.infer<typeof registerSchema>) => {
+		setLoading(true);
+		const { success, message } = await registerUser(values);
+
+		if (success) {
+			setTimeout(() => {
+				setLoading(false);
+				navigate("/login");
+			}, 1000);
+		} else {
+			setResult(message);
+			setLoading(false);
+		}
+	};
+
+	return (
+		<div className="flex min-h-screen min-w-screen">
+			<div className="bg-primary w-1/2"></div>
+			<div className="w-1/2 h-screen flex flex-col relative">
+				<Link
+					to={"/login"}
+					className="absolute right-12 top-8 text-muted-foreground underline"
+				>
+					Login
+				</Link>
+				<div className="flex flex-1 flex-col justify-center items-center">
+					<p className="text-center font-semibold text-xl">
+						Create an account
+					</p>
+					<p className="text-center text-sm text-muted-foreground mt-2">
+						Enter your email below to create your account
+					</p>
+					<div className="w-1/2 pt-10">
+						<Form {...form}>
+							<form
+								onSubmit={form.handleSubmit(onSubmit)}
+								className="space-y-4"
+							>
+								<FormField
+									control={form.control}
+									name="name"
+									render={({ field }) => (
+										<FormItem>
+											<FormLabel>Username</FormLabel>
+											<FormControl>
+												<Input
+													placeholder="shadcn"
+													{...field}
+												/>
+											</FormControl>
+											<FormMessage />
+										</FormItem>
+									)}
+								/>
+
+								<FormField
+									control={form.control}
+									name="email"
+									render={({ field }) => (
+										<FormItem>
+											<FormLabel>Email</FormLabel>
+											<FormControl>
+												<Input
+													type="email"
+													placeholder="you@example.com"
+													{...field}
+												/>
+											</FormControl>
+											<FormMessage />
+										</FormItem>
+									)}
+								/>
+
+								<FormField
+									control={form.control}
+									name="password"
+									render={({ field }) => (
+										<FormItem>
+											<FormLabel>Password</FormLabel>
+											<FormControl>
+												<Input
+													type="password"
+													placeholder="••••••••"
+													{...field}
+												/>
+											</FormControl>
+											<FormMessage />
+										</FormItem>
+									)}
+								/>
+
+								<Button
+									type="submit"
+									className="w-full"
+									disabled={loading}
+								>
+									{loading ? <LoadingSpinner /> : "Submit"}
+								</Button>
+
+								<p className="text-red-500 text-sm">{result}</p>
+							</form>
+						</Form>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}

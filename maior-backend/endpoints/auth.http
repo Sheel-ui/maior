@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:8080
+
+###
+# Register a new user
+POST {{baseUrl}}/auth/signup
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test",
+  "email": "sheeltaskar66@gmail.com",
+  "password": "1"
+}
+
+###
+# Login with the new user
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "sheeltaskar64@gmail.com",
+  "password": "11111111"
+}
+
+###
+# Access protected dashboard route with JWT token
+# Replace {{token}} with the JWT from the login response
+GET {{baseUrl}}/dashboard/bar
+Content-Type: application/json
+Accept: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoZWVsdGFza2FyNjRAZ21haWwuY29tIiwiX2lkIjoiNjcyZDc3NGNlMGNjMzY5MmI2ODkxNGM2IiwiaWF0IjoxNzMxMDMzNzcwLCJleHAiOjE3MzExMjAxNzB9.faPsCbDwW3fRIngyJtV3xMwdhvSrJGrHBGpUh0LVOYk

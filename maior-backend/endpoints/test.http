@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:8000
+
+###
+# Create a new item
+POST {{baseUrl}}/items/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Sample Item 2",
+  "description": "This is a test item 2",
+  "price": 11.99,
+  "quantity": 6
+}
+
+###
+# Get all items
+GET {{baseUrl}}/items/
+Accept: application/json
+
+###
+# Get an item by ID
+GET {{baseUrl}}/items/2
+Accept: application/json
+
+###
+# Update an item by ID
+PUT {{baseUrl}}/items/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Updated Sample Item",
+  "description": "This item has been updated",
+  "price": 12.99,
+  "quantity": 10
+}
+
+###
+# Delete an item by ID
+DELETE {{baseUrl}}/items/1
+Accept: application/json
