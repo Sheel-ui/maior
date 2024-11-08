@@ -28,11 +28,24 @@ Accept: application/json
 GET {{baseUrl}}/time-series
 Accept: application/json
 
+###
+# Get all items
+GET {{baseUrl}}/category/month
+Accept: application/json
 
+###
+# Get all items
+GET {{baseUrl}}/total-spend/week
+Accept: application/json
+
+###
+# Get all items
+GET {{baseUrl}}/category/week
+Accept: application/json
 
 ###
 # Get an item by ID
-GET {{baseUrl}}/items/2
+GET {{baseUrl}}/category/11
 Accept: application/json
 
 ###

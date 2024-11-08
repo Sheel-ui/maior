@@ -42,15 +42,13 @@ def get_last_three_months_data(transactions):
     end_date = today.strftime("%Y-%m-%d")
     return spending_dict_for_range(transactions, start_date.strftime("%Y-%m-%d"), end_date)
 
-
-
-# Group transactions by month
-def group_by_month(transactions):
-    monthly_data = defaultdict(list)
-    for transaction in transactions:
-        month = transaction["date"].strftime("%Y-%m")
-        monthly_data[month].append(transaction)
-    return monthly_data
+# # Group transactions by month
+# def group_by_month(transactions):
+#     monthly_data = defaultdict(list)
+#     for transaction in transactions:
+#         month = transaction["date"].strftime("%Y-%m")
+#         monthly_data[month].append(transaction)
+#     return monthly_data
 
 # Group transactions by week
 def group_by_week(transactions):
@@ -77,7 +75,8 @@ def aggregate_category_by_range(transactions):
     return result
 
 
-def aggregate_category_by_week(weekly_data):
+def aggregate_category_by_week(transactions):
+    weekly_data = group_by_week(transactions)
     weekly_category_totals = defaultdict(lambda: defaultdict(float))
     
     # Aggregate totals by category for each week
@@ -93,7 +92,8 @@ def aggregate_category_by_week(weekly_data):
 
     return result
 
-def aggregate_category_by_month(monthly_data):
+def aggregate_category_by_month(transactions):
+    monthly_data = group_by_month(transactions)
     monthly_category_totals = defaultdict(lambda: defaultdict(float))
     
     # For each month, aggregate the totals by category
@@ -170,7 +170,7 @@ def total_spent_by_week(transactions):
         week_start = (date_obj - timedelta(days=date_obj.weekday())).strftime("%Y-%m-%d")
         weekly_spending[week_start] += spending
     # Round off the weekly totals to 2 decimal places
-    weekly_spending = [{"week_start": week, "amount": round(amount, 2)} for week, amount in weekly_spending.items()]
+    weekly_spending = [{"start": week, "amount": round(amount, 2)} for week, amount in weekly_spending.items()]
     return weekly_spending
 
 # Function to calculate monthly spending totals
@@ -191,7 +191,7 @@ def total_spent_by_month(transactions):
         monthly_spending[month_start] += spending
     
     # Round off the monthly totals to 2 decimal places and format the result as a list of dictionaries
-    monthly_spending = [{"month_start": month, "amount": round(amount, 2)} for month, amount in monthly_spending.items()]
+    monthly_spending = [{"start": month, "amount": round(amount, 2)} for month, amount in monthly_spending.items()]
     
     return monthly_spending
 
@@ -231,24 +231,48 @@ def aggregate_channel_by_week(weekly_data):
 
     return weekly_channel_totals
 
-# Function to aggregate spending by payment channel monthly in the specified format
-def aggregate_channel_by_month(monthly_data):
-    monthly_channel_totals = []
+# # Function to aggregate spending by payment channel monthly in the specified format
+# def aggregate_channel_by_month(monthly_data):
+#     monthly_channel_totals = []
 
-    # Aggregate totals by channel for each month
-    for month_start, transactions in monthly_data.items():
-        channel_totals = defaultdict(float)
+#     # Aggregate totals by channel for each month
+#     for month_start, transactions in monthly_data.items():
+#         channel_totals = defaultdict(float)
         
-        # Sum transaction amounts by payment channel for the month
-        for transaction in transactions:
-            channel = transaction.get("payment_channel", "Unknown")
-            channel_totals[channel] += transaction["amount"]
+#         # Sum transaction amounts by payment channel for the month
+#         for transaction in transactions:
+#             channel = transaction.get("payment_channel", "Unknown")
+#             channel_totals[channel] += transaction["amount"]
         
-        # Build the formatted dictionary for the month
-        month_summary = {"month": month_start}
-        month_summary.update({channel: round(total, 2) for channel, total in channel_totals.items()})
-        monthly_channel_totals.append(month_summary)
+#         # Build the formatted dictionary for the month
+#         month_summary = {"month": month_start}
+#         month_summary.update({channel: round(total, 2) for channel, total in channel_totals.items()})
+#         monthly_channel_totals.append(month_summary)
 
-    return monthly_channel_totals# Read, parse, and write data
+#     return monthly_channel_totals# Read, parse, and write data
 
 
+def group_by_month(transactions):
+    monthly_data = defaultdict(list)
+    for transaction in transactions:
+        # Use .month to get the month as an integer
+        month = transaction["date"].month
+        monthly_data[month].append(transaction)
+    return monthly_data
+
+def aggregate_category_by_month(transactions, month):
+    category_totals = defaultdict(float)
+    monthly_data = group_by_month(transactions)
+    # Check if the specified month exists in the data
+    if month in monthly_data:
+        # Aggregate amounts by category for the given month
+        for transaction in monthly_data[month]:
+            category = transaction["category"][0]
+            if category == "Food and Drink":
+                category = "Food"
+            amount = transaction["amount"]
+            category_totals[category] += amount
+
+    # Format the result as a list of category totals for the given month
+    result = [{"category": cat, "amount": round(total, 2), "fill": f"var(--color-{cat})"} for cat, total in category_totals.items()]
+    return result

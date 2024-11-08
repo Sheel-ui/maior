@@ -36,6 +36,29 @@ router.get(
 	}
 );
 
+router.get(
+	"/total-spend/month",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		await getGraphData(req, res, "total-spend/month");
+	}
+);
 
+router.get(
+	"/total-spend/week",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		await getGraphData(req, res, "total-spend/week");
+	}
+);
+
+router.get(
+	"/category/:id",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		const { id } = req.params;
+		await getGraphData(req, res, `category/${id}`);
+	}
+);
 
 export default router;

@@ -54,7 +54,7 @@ export function TimeSeries( { chartData }: TimeSeriesProps) {
 
   const filteredData = chartData.filter((item) => {
     const date = new Date(item.date)
-    const referenceDate = new Date("2024-06-30")
+    const referenceDate = new Date("2024-11-03")
     let daysToSubtract = 90
     if (timeRange === "30d") {
       daysToSubtract = 30
@@ -65,6 +65,11 @@ export function TimeSeries( { chartData }: TimeSeriesProps) {
     startDate.setDate(startDate.getDate() - daysToSubtract)
     return date >= startDate
   })
+
+  // const logData = filteredData.map(item => ({
+  //   ...item,
+  //   amount: Math.log10(Math.abs(Number(item.amount)) + 1)
+  // }));
 
   return (
     <Card>

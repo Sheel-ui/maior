@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import datetime
 
 # Constants
 OUTPUT_FILE = './app/store/parsed_transactions.json'
@@ -68,6 +69,7 @@ def parse_transactions(data, all_data):
 def main():
     # Process all JSON files and write the output
     processed_data = read_all_json(FOLDER_PATH)
+    processed_data.sort(key=lambda x: datetime.strptime(x['date'], '%Y-%m-%d'))
     write_json(processed_data, OUTPUT_FILE)
 
 

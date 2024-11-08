@@ -20,9 +20,8 @@ import {
 } from "@/components/ui/chart"
 
 interface ChartDataItem {
-  browser: string;
-  visitors: number;
-  fill: string;
+  category: string,
+  amount: number
 }
 
 interface BarProps {
@@ -30,41 +29,56 @@ interface BarProps {
 }
 
 const chartConfig = {
-  visitors: {
-    label: "Visitors",
+  amount: {
+    label: "Amount",
   },
-  chrome: {
-    label: "Chrome",
+  Travel: {
+    label: "Travel",
     color: "hsl(var(--chart-1))",
   },
-  safari: {
-    label: "Safari",
+  Food: {
+    label: "Food and Drink",
     color: "hsl(var(--chart-2))",
   },
-  firefox: {
-    label: "Firefox",
+  Transfer: {
+    label: "Transfer",
     color: "hsl(var(--chart-3))",
   },
-  edge: {
-    label: "Edge",
+  Shops: {
+    label: "Shops",
     color: "hsl(var(--chart-4))",
   },
-  other: {
-    label: "Other",
+  Service: {
+    label: "Service",
     color: "hsl(var(--chart-5))",
+  },
+  Healthcare: {
+    label: "Healthcare",
+    color: "hsl(var(--chart-6))",
+  },
+  Payment: {
+    label: "Payment",
+    color: "hsl(var(--chart-7))",
+  },
+  Recreation: {
+    label: "Recreation",
+    color: "hsl(var(--chart-8))",
+  },
+  Community: {
+    label: "Community",
+    color: "hsl(var(--chart-9))",
   },
 } satisfies ChartConfig
 
-export function Bar ({ chartData }: BarProps) {
+export function PieGraph ({ chartData }: BarProps) {
   const totalVisitors = React.useMemo(() => {
-    return chartData.reduce((acc, curr) => acc + curr.visitors, 0)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+    return chartData.reduce((acc, curr) => acc + curr.amount, 0)
+  }, [chartData])
 
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col h-[390px]">
       <CardHeader className="items-center pb-0">
-        <CardTitle className="text-md">Pie Chart - Donut with Text</CardTitle>
+        <CardTitle className="text-md">Pie Chart - Donut</CardTitle>
         <CardDescription className="text-sm">January - June 2024</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
@@ -79,8 +93,8 @@ export function Bar ({ chartData }: BarProps) {
             />
             <Pie
               data={chartData}
-              dataKey="visitors"
-              nameKey="browser"
+              dataKey="amount"
+              nameKey="category"
               innerRadius={60}
               strokeWidth={5}
             >
@@ -106,7 +120,7 @@ export function Bar ({ chartData }: BarProps) {
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
-                          Visitors
+                          Total Spend
                         </tspan>
                       </text>
                     )

@@ -35,6 +35,7 @@ export const getGraphData = async (type: string) => {
 				Authorization: token,
 			},
 		});
+		console.log(`http://localhost:8080/dashboard/${type}`);
 		return response.data;
 	} catch (error) {
 		console.error("Error fetching account details:", error);

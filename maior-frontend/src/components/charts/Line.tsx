@@ -43,7 +43,7 @@ export function Line() {
 		fetchData();
 	}, []);
 	return (
-		<Card>
+		<Card className="h-[390px]">
 		<CardHeader>
 		  <CardTitle>Area Chart - Stacked</CardTitle>
 		  <CardDescription>
