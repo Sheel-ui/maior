@@ -2,8 +2,8 @@ import os
 import json
 
 # Constants
-OUTPUT_FILE = '../store/parsed_transactions.json'
-FOLDER_PATH = "../data/"
+OUTPUT_FILE = './app/store/parsed_transactions.json'
+FOLDER_PATH = "./app/data"
 
 
 
@@ -47,7 +47,7 @@ def parse_transactions(data, all_data):
     # Check if 'added' transactions exist in the data
     if 'added' in data:
         for transaction in data['added']:
-            if not (transaction.get('amount') < 0 and 'Billpay' in transaction.get('category')):
+            if not (transaction.get('amount') < 0 and ('Billpay' in transaction.get('category') or "Credit Card" in transaction.get('category'))):
                 all_data.append({
                     'transaction_id': transaction.get('transaction_id'),
                     'amount': transaction.get('amount'),

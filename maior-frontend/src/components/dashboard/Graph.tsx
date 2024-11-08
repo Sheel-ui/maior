@@ -1,6 +1,6 @@
 import { Line } from "@/components/charts/Line";
 import Chart from "../charts/Chart";
-import { TimeSeries } from "../charts/base/TimeSeries";
+import TimeSeriesChart from "../charts/TimeSeriesChart";
 
 export default function Graph() {
 	return (
@@ -10,9 +10,9 @@ export default function Graph() {
 				<Chart />
 				<Line />
 			</div>
-      <div className="grid grid-cols-1 px-8 pb-8">
-				<TimeSeries />
-			</div>
+			<div className="grid grid-cols-1 px-8 pb-8">
+				<TimeSeriesChart />
+			</div>	
 		</div>
 	);
 }

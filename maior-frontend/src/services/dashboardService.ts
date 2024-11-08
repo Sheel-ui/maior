@@ -23,33 +23,14 @@ export const getAccountId = async () => {
 	}
 };
 
-export const getLineGraph = async () => {
+export const getGraphData = async (type: string) => {
 	if (!token) {
 		return {
 			"message": "Invalid token"
 		}
 	}
 	try {
-		const response = await axios.get("http://localhost:8080/dashboard/line" ,{
-			headers: {
-				Authorization: token,
-			},
-		});
-		return response.data;
-	} catch (error) {
-		console.error("Error fetching account details:", error);
-		throw error;
-	}
-};
-
-export const getBarGraph = async () => {
-	if (!token) {
-		return {
-			"message": "Invalid token"
-		}
-	}
-	try {
-		const response = await axios.get("http://localhost:8080/dashboard/bar",{
+		const response = await axios.get(`http://localhost:8080/dashboard/${type}` ,{
 			headers: {
 				Authorization: token,
 			},

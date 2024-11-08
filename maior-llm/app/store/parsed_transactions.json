@@ -434,22 +434,6 @@
         }
     },
     {
-        "transaction_id": "0qZp4wKan1CwYoz3yKEgcEZwXMDEdkUjyK75p",
-        "amount": -6741.82,
-        "date": "2024-10-14",
-        "category": [
-            "Payment",
-            "Credit Card"
-        ],
-        "category_id": "16001000",
-        "merchant_name": null,
-        "payment_channel": "other",
-        "location": {
-            "city": null,
-            "region": null
-        }
-    },
-    {
         "transaction_id": "j98P6zqy3kuAgbow1mD4iLXYopqL9AiwArzYo",
         "amount": 12.0,
         "date": "2024-10-13",

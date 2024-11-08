@@ -15,7 +15,7 @@ import {
 	ChartTooltip,
 	ChartTooltipContent,
 } from "@/components/ui/chart";
-import { getLineGraph } from "@/services/dashboardService";
+import { getGraphData } from "@/services/dashboardService";
 
 const chartConfig = {
 	desktop: {
@@ -33,7 +33,7 @@ export function Line() {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const result = await getLineGraph();
+				const result = await getGraphData("line");
         		setChartData(result);
 			} catch (error) {
 				console.error("Error fetching line graph data:", error);

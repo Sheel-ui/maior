@@ -8,7 +8,7 @@ transaction_list = {"transactions":[]}
 
 # Read the JSON file and load the data
 def read_json():
-    with open('./store/parsed_transactions.json', 'r') as file:
+    with open('./app/store/parsed_transactions.json', 'r') as file:
         data = json.load(file)
     return data
 
