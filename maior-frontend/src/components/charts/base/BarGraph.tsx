@@ -39,7 +39,7 @@ export function BarGraph({ chartData }: BarProps) {
 				<CardHeader>
 					<CardTitle className="text-md">Bar Chart - Label</CardTitle>
 					<CardDescription className="text-sm">
-						January - June 2024
+						May - November 2024
 					</CardDescription>
 				</CardHeader>
 				<CardContent>

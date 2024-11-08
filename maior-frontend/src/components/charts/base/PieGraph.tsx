@@ -81,7 +81,7 @@ export function PieGraph({ chartData }: BarProps) {
 				<CardHeader className="items-center pb-0">
 					<CardTitle className="text-md">Pie Chart - Donut</CardTitle>
 					<CardDescription className="text-sm">
-						January - June 2024
+						May - November 2024
 					</CardDescription>
 				</CardHeader>
 				<CardContent className="flex-1 pb-0">
