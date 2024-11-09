@@ -16,6 +16,8 @@ import {
 } from "../ui/card";
 import { useState } from "react";
 import { getAiInsightsData } from "@/services/dashboardService";
+import { LoadingSpinner } from "./Spinner";
+import InsightText from "./InsightText";
 
 const months = [
 	"City Spending Analysis",
@@ -36,13 +38,21 @@ const months = [
 export default function Insights() {
 	const [selectedPrompt, setSelectedPrompt] = useState("-1");
 	const [result, setResult] = useState("");
+	const [loading, setLoading] = useState(false);
 
 	const handleChange = async (value: string) => {
 		setSelectedPrompt(value);
-		const response = await getAiInsightsData(selectedPrompt);
-		setResult(response.response);
+		setLoading(true);
+		try {
+			const response = await getAiInsightsData(selectedPrompt);
+			setResult(response.response);
+			setLoading(false);
+		} catch {
+			setResult("Something went Wrong! Try again later.");
+			setLoading(false);
+		}
 	};
-	
+
 	return (
 		<Card className="h-[640px]">
 			<CardHeader>
@@ -54,10 +64,7 @@ export default function Insights() {
 							By ChatGpt
 						</CardDescription>
 					</div>
-					<Select
-						value={selectedPrompt}
-						onValueChange={handleChange}
-					>
+					<Select value={selectedPrompt} onValueChange={handleChange}>
 						<SelectTrigger className="w-[320px]">
 							<SelectValue placeholder="Generate insights">
 								{selectedPrompt === "-1"
@@ -81,7 +88,12 @@ export default function Insights() {
 				</div>
 			</CardHeader>
 			<CardContent className="space-y-10 overflow-y-auto h-[525px] pt-4 text-sm">
-				{result}
+				{!loading && <InsightText result={result}/>}
+				{loading && (
+					<div className="h-full w-full flex justify-center items-center">
+						<LoadingSpinner />
+					</div>
+				)}
 			</CardContent>
 		</Card>
 	);

@@ -85,7 +85,7 @@ export function BarGraph({ chartData }: BarProps) {
 						<TrendingUp className="h-4 w-4" />
 					</div>
 					<div className="leading-none text-muted-foreground text-sm">
-						Showing total spendings for the last 6 months
+						Showing total spendings from the last 6 months
 					</div>
 				</CardFooter>
 			</Card>
