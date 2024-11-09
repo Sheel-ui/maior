@@ -9,12 +9,7 @@ export default function Insights() {
 					By ChatGpt
 				</CardDescription>
 			</CardHeader>
-            <CardContent className="bg-red-100 space-y-10 overflow-y-auto h-[525px]">
-                <div className="bg-green-100 size-32"></div>
-                <div className="bg-green-100 size-32"></div>
-                <div className="bg-green-100 size-32"></div>
-                <div className="bg-green-100 size-32"></div>
-                <div className="bg-green-100 size-32"></div>
+            <CardContent className="space-y-10 overflow-y-auto h-[525px]">
             </CardContent>
 		</Card>
 	);

@@ -41,6 +41,10 @@ async def get_category_data(month: int):
 async def get_channel_data(month: int):
     return aggregate_channel_by_month(transaction_list["transactions"],month)
 
+@router.get("/cities/{month}")
+async def get_city_data(month: int):
+    return aggregate_city_by_month(transaction_list["transactions"],month)
+
 @router.get("/word/{tag}")
 async def get_word_data(tag):
     return aggregate_category_by_time_period(transaction_list["transactions"],tag)

@@ -25,7 +25,26 @@ export const getGraphData = async (type: string) => {
 		}
 	}
 	try {
-		const response = await axios.get(`http://localhost:8080/dashboard/${type}` ,{
+		const response = await axios.get(`${API_URL}/${type}` ,{
+			headers: {
+				Authorization: token,
+			},
+		});
+		return response.data;
+	} catch (error) {
+		console.error("Error fetching account details:", error);
+		throw error;
+	}
+};
+
+export const getAiGraphData = async (query: string) => {
+	if (!token) {
+		return {
+			"message": "Invalid token"
+		}
+	}
+	try {
+		const response = await axios.post(`${API_URL}/generate-graph`, { query } ,{
 			headers: {
 				Authorization: token,
 			},

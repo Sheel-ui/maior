@@ -389,33 +389,28 @@ def transform(df, type):
 
 
 def visualize(query):
+    df = global_df
     try:
-        df = global_df
         column_info = df.dtypes
         line1 = "I have a csv file with columns:\n"
         line2 = str(column_info) + "\n"
         line3 = "My table name is df\n"
         line4 = "Write an SQL query:\n"
-        prompt = line1+line2+line3+line4+query
+        line5 = "My date is of format YYYY-MM-DD\n"
+        prompt = line1+line2+line3+line4+line5+query
         response = azure_llm_35.invoke(prompt).content
-
-        print(type(response))
-        if response.find("```sql")!=-1:
-            start=response.find("```sql")
-            end=response.rfind("```")
-            response = query[start+6:end]
-            
+        response = re.search(r"SELECT.*?;", response, re.DOTALL).group(0)
         result_df = ps.sqldf(response, locals())
-        
         columns = result_df.columns.tolist()
         pattern = r'\bGROUP\s+BY\b'
-        match = re.search(pattern, query, re.IGNORECASE)
+        match = re.search(pattern, response, re.IGNORECASE)
         if match and len(columns)==2:
             result = transform(result_df,"graph")
         else:
             result = transform(result_df,"table")
 
         return result 
-    except:
+    except Exception as e:
+        print(e)
         return  { "type": "error", "data": []}
     

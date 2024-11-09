@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"; // Ensure that this import is c
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -46,9 +45,8 @@ export function GenTable({ data }: GenTableProps) {
   const columns = Object.keys(data[0]);
 
   return (
-    <div>
+    <div className="overflow-y-auto h-[540px]">
       <Table>
-        <TableCaption>A list of dynamic data.</TableCaption>
         <TableHeader>
           <TableRow>
             {columns.map((col) => (
