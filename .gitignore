@@ -57,3 +57,6 @@ db.sqlite3
 *.log
 *.temp
 *.tmp
+
+maior-llm/app/data/*
+maior-llm/app/store/*
