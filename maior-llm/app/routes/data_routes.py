@@ -60,3 +60,7 @@ def get_credits_data():
 @router.post("/generate-graph")
 async def get_cities_data(request: ModelRequest):
     return visualize(request.query)
+
+@router.get("/generate-insight/{tag}")
+async def get_insights_data(tag: int):
+    return get_insights(tag)

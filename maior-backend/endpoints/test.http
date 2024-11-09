@@ -22,7 +22,7 @@ Accept: application/json
 
 ###
 # Get all items
-GET {{baseUrl}}/time-series
+GET {{baseUrl}}/generate-insight/3
 Accept: application/json
 
 ###

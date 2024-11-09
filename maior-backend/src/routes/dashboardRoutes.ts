@@ -1,6 +1,6 @@
 import { Router, Request, Response } from "express";
 import ensureAuthenticated from "../middleware/authMiddleware";
-import { getAccountId, getGraphData, genAiGraphData } from "../controllers/chartController";
+import { getAccountId, getGraphData, genAiGraphData, genAiInsightsData } from "../controllers/chartController";
 
 const router: Router = Router();
 
@@ -102,6 +102,15 @@ router.get(
 	async (req: Request, res: Response): Promise<void> => {
 		const { id } = req.params;
 		await getGraphData(req, res, `cities/${id}`);
+	}
+);
+
+router.get(
+	"/generate-insight/:id",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		const { id } = req.params;
+		await genAiInsightsData(req, res, `generate-insight/${id}`);
 	}
 );
 

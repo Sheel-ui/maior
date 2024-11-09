@@ -9,7 +9,6 @@ interface GenerateGraphProps {
 }
 
 export default function GenerateGraph({ type, data }: GenerateGraphProps) {
-  console.log(type,data)
 	return (
 		<div>
 			{!type ? (

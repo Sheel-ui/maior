@@ -1,4 +1,11 @@
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem } from "@/components/ui/select";
+import {
+	Select,
+	SelectTrigger,
+	SelectValue,
+	SelectContent,
+	SelectGroup,
+	SelectItem,
+} from "@/components/ui/select";
 
 import {
 	Card,
@@ -8,6 +15,7 @@ import {
 	CardTitle,
 } from "../ui/card";
 import { useState } from "react";
+import { getAiInsightsData } from "@/services/dashboardService";
 
 const months = [
 	"City Spending Analysis",
@@ -22,13 +30,19 @@ const months = [
 	"Comparing Spending to Historical Trends",
 	"Recurring Charges Analysis",
 	"Seasonal Spending Patterns",
-	"Travel Spending Analysis"
-  ];
-  
-
+	"Travel Spending Analysis",
+];
 
 export default function Insights() {
-	const [selectedPrompt, setSelectedPrompt] = useState("0");
+	const [selectedPrompt, setSelectedPrompt] = useState("-1");
+	const [result, setResult] = useState("");
+
+	const handleChange = async (value: string) => {
+		setSelectedPrompt(value);
+		const response = await getAiInsightsData(selectedPrompt);
+		setResult(response.response);
+	};
+	
 	return (
 		<Card className="h-[640px]">
 			<CardHeader>
@@ -40,9 +54,16 @@ export default function Insights() {
 							By ChatGpt
 						</CardDescription>
 					</div>
-					<Select value={selectedPrompt} onValueChange={setSelectedPrompt}>
+					<Select
+						value={selectedPrompt}
+						onValueChange={handleChange}
+					>
 						<SelectTrigger className="w-[320px]">
-							<SelectValue />
+							<SelectValue placeholder="Generate insights">
+								{selectedPrompt === "-1"
+									? "Generate insights"
+									: months[parseInt(selectedPrompt)]}
+							</SelectValue>
 						</SelectTrigger>
 						<SelectContent>
 							<SelectGroup>
@@ -59,8 +80,8 @@ export default function Insights() {
 					</Select>
 				</div>
 			</CardHeader>
-			<CardContent className="space-y-10 overflow-y-auto h-[525px] pt-4">
-				{selectedPrompt}
+			<CardContent className="space-y-10 overflow-y-auto h-[525px] pt-4 text-sm">
+				{result}
 			</CardContent>
 		</Card>
 	);

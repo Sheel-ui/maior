@@ -55,3 +55,23 @@ export const getAiGraphData = async (query: string) => {
 		throw error;
 	}
 };
+
+
+export const getAiInsightsData = async (type: string) => {
+	if (!token) {
+		return {
+			"message": "Invalid token"
+		}
+	}
+	try {
+		const response = await axios.get(`${API_URL}/generate-insight/${type}` ,{
+			headers: {
+				Authorization: token,
+			},
+		});
+		return response.data;
+	} catch (error) {
+		console.error("Error fetching account details:", error);
+		throw error;
+	}
+};
