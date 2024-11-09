@@ -24,7 +24,7 @@ export default function App() {
 
 	return (
 		<div className="max-h-screen overflow-hidden">
-			<Router>
+			<Router future={{ v7_startTransition: true }} >
 				<AuthHandler setIsAuthenticated={setIsAuthenticated} />
 				<Routes>
 					<Route path="/" element={<Navigate to="/login" />} />

@@ -42,7 +42,6 @@ export default function Login() {
 				setLoading(false);
 				navigate("/dashboard");
 			},1000);
-
 		} else {
 			setResult(response.error || "Something went wrong!");
 			setLoading(false);

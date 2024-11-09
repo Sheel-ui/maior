@@ -1,23 +1,11 @@
-import { useEffect, useState } from "react";
-import { getAccountId } from "@/services/dashboardService";
-export default function Badge() {
-	const [accountDetails, setAccountDetails] = useState(null);
+interface BadgeProps {
+	accountId: string;
+}
 
-	useEffect(() => {
-		const fetchAccountDetails = async () => {
-			try {
-				const accountId = await getAccountId();
-				setAccountDetails(accountId);
-			} catch (error) {
-				console.error(error);
-			}
-		};
-
-		fetchAccountDetails();
-	}, []);
+export default function Badge({accountId}: BadgeProps) {
 	return (
-		<div className="absolute bottom-0 right-0 bg-secondary text-muted-foreground">
-			{accountDetails && <div className="text-sm">AccountId: {accountDetails}</div>}
+		<div className="absolute bottom-0 right-0 bg-secondary px-2 text-muted-foreground">
+			<div className="text-sm">AccountId: {accountId}</div>
 		</div>
 	);
 }

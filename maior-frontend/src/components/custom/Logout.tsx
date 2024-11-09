@@ -4,7 +4,11 @@ import { LoadingSpinner } from "@/components/custom/Spinner";
 import { useState } from "react";
 import { LogOut } from "lucide-react";
 
-export default function Logout() {
+interface LogoutProps {
+	text?: string;
+}
+
+export default function Logout({ text }: LogoutProps) {
 	const navigate = useNavigate();
 	const [loading, setLoading] = useState(false);
 
@@ -24,7 +28,14 @@ export default function Logout() {
 			className="rounded-md"
 			disabled={loading}
 		>
-			{loading ? <LoadingSpinner /> : <LogOut/>}
+			{loading ? (
+				<LoadingSpinner />
+			) : (
+				<div className={"flex items-center space-x-4 p-2"}>
+					<span className="text-sm">{text}</span>
+					<LogOut className="w-5 h-5" />
+				</div>
+			)}
 		</Button>
 	);
 }
