@@ -31,7 +31,7 @@ export default function App() {
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
 					<Route
-						path="/Dashboard"
+						path="/dashboard"
 						element={<PrivateRoute element={<Dashboard />} />}
 					/>
 					<Route path="*" element={<NotFound />} />

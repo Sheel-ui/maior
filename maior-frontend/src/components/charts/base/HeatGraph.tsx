@@ -4,7 +4,6 @@ interface HeatProps {
   value: HeatMapValue[]
 }
 const Demo = ({value}: HeatProps) => {
-  console.log(value);
   return (
     <HeatMap
       className='w-2/3'
