@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 
 export default function BarGraphChart() {
-	const [chartData, setChartData] = useState(null);
+	const [chartData, setChartData] = useState([]);
     const [selectedRange, setSelectedRange] = useState("month"); 
 
 	useEffect(() => {
@@ -42,7 +42,7 @@ export default function BarGraphChart() {
 					</SelectContent>
 				</Select>
 			</div>
-			{chartData ? <BarGraph chartData={chartData} /> : null}
+			{chartData && <BarGraph chartData={chartData} /> }
 		</div>
 	);
 }

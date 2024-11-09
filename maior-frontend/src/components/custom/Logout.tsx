@@ -31,8 +31,8 @@ export default function Logout({ text }: LogoutProps) {
 			{loading ? (
 				<LoadingSpinner />
 			) : (
-				<div className={"flex items-center space-x-4 p-2"}>
-					<span className="text-sm">{text}</span>
+				<div className={"flex items-center"}>
+					{text && <span className="text-sm pr-2">{text}</span>}
 					<LogOut className="w-5 h-5" />
 				</div>
 			)}

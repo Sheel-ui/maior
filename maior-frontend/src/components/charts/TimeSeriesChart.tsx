@@ -4,7 +4,7 @@ import { TimeSeries } from "./base/TimeSeries";
 
 
 export default function TimeSeriesChart() {
-    const [chartData, setChartData] = useState(null);
+    const [chartData, setChartData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -18,6 +18,5 @@ export default function TimeSeriesChart() {
         fetchData();
     }, []);
 
-    // Only render TimeSeries if chartData is not null
-    return chartData ? <TimeSeries chartData={chartData} /> : null;
+    return (<div>{chartData && <TimeSeries chartData={chartData} /> }</div>)
 }

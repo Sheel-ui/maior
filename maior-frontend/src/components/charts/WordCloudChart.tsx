@@ -11,8 +11,8 @@ import {
 import { useState, useEffect } from "react";
 
 export default function WordCloudChart() {
-	const [chartData, setChartData] = useState(null);
-	const [selectedRange, setSelectedRange] = useState("week");
+	const [chartData, setChartData] = useState([]);
+	const [selectedRange, setSelectedRange] = useState("half");
 	useEffect(() => {
 		const fetchData = async () => {
 			try {

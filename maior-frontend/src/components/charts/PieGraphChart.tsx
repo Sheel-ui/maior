@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 
 export default function PieGraphChart() {
-	const [chartData, setChartData] = useState(null);
+	const [chartData, setChartData] = useState([]);
 	const [selectedRange, setSelectedRange] = useState("0");
 	useEffect(() => {
 		const fetchData = async () => {

@@ -3,7 +3,7 @@ import { getGraphData } from "@/services/dashboardService";
 import { useState, useEffect } from "react";
 
 export default function HeatGraphChart() {
-  const [chartData, setChartData] = useState(null);
+  const [chartData, setChartData] = useState([]);
   useEffect(() => {
 		const fetchData = async () => {
 			try {
