@@ -80,5 +80,12 @@ router.get(
 	}
 );
 
+router.get(
+	"/heatmap",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		await getGraphData(req, res, `heatmap`);
+	}
+);
 
 export default router;

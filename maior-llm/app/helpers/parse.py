@@ -330,3 +330,12 @@ def aggregate_category_by_time_period(transactions, timeframe):
     
     top_20_word_cloud_data = sorted(word_cloud_data, key=lambda x: x["count"], reverse=True)[:10]
     return top_20_word_cloud_data
+
+def heatmap_data(transactions):
+    spending_dict = create_spending_dict(transactions)
+    for transaction in spending_dict:
+        if isinstance(transaction['date'], datetime):
+            transaction['date'] = transaction['date'].strftime('%Y-%m-%d')
+        date_obj = datetime.strptime(transaction['date'], '%Y-%m-%d')
+        transaction['date'] = date_obj.strftime('%Y/%m/%d')
+    return [ {"date":i["date"],"count":i["amount"]} for i in spending_dict]

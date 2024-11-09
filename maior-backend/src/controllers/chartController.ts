@@ -21,7 +21,6 @@ export const getAccountId = async (req: Request, res: Response): Promise<Respons
 
 export const getGraphData = async (req: Request, res: Response, endpoint: string): Promise<Response> => {
     try {
-        console.log('hi')
         const { data } = await axios.get(`http://localhost:8000/${endpoint}`);
         if (!data) {
             return res.status(404).json({ message: "Data not Found." });

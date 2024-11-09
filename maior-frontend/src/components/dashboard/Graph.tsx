@@ -3,6 +3,7 @@ import TimeSeriesChart from "../charts/TimeSeriesChart";
 import BarGraphChart from "../charts/BarGraphChart";
 import RadarGraphChart from "../charts/RadarGraphChart";
 import WordCloudChart from "../charts/WordCloudChart";
+import HeatGraphChart from "../charts/HeatGraphChart";
 
 export default function Graph() {
 	return (
@@ -17,6 +18,9 @@ export default function Graph() {
 			</div>	
 			<div className="grid grid-cols-3 px-8 pb-8">
 				<WordCloudChart />
+			</div>
+			<div className="grid grid-cols-1 px-8 pb-8">
+				<HeatGraphChart />
 			</div>	
 		</div>
 	);

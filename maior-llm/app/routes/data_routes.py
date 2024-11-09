@@ -55,3 +55,7 @@ async def get_channel_data(month: int):
 @router.get("/word/{tag}")
 async def get_word_data(tag):
     return aggregate_category_by_time_period(transaction_list["transactions"],tag)
+
+@router.get("/heatmap")
+async def get_heatmap_data():
+    return heatmap_data(transaction_list["transactions"])
