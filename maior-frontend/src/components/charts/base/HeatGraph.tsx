@@ -2,11 +2,13 @@ import {
 	Card,
 	CardContent,
 	CardDescription,
+	CardFooter,
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
 
 import HeatMap, { HeatMapValue } from "@uiw/react-heat-map";
+import { TrendingUp } from "lucide-react";
 import { Tooltip } from "react-tooltip";
 
 interface HeatProps {
@@ -15,7 +17,7 @@ interface HeatProps {
 const Demo = ({ value }: HeatProps) => {
 	return (
 		<div>
-			<Card className="flex flex-col min-h-[360px] pb-0">
+			<Card className="flex flex-col h-[420px] pb-0">
 				<CardHeader className="pb-6">
 					<CardTitle className="text-md">Spend Days</CardTitle>
 					<CardDescription className="text-sm">
@@ -68,6 +70,15 @@ const Demo = ({ value }: HeatProps) => {
 						}}
 					/>
 				</CardContent>
+				<CardFooter className="flex-col items-start gap-2 text-sm pb-6">
+					<div className="flex gap-2 font-medium leading-none">
+						Trending up by 5.2% this month{" "}
+						<TrendingUp className="h-4 w-4" />
+					</div>
+					<div className="leading-none text-muted-foreground">
+						Showing top categories from the last 6 months
+					</div>
+				</CardFooter>
 			</Card>
 			<Tooltip id="my-tooltip" style={{ borderRadius: "10px" }} />
 		</div>

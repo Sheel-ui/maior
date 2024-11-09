@@ -38,7 +38,7 @@ export function LineGraph({ chartData }: LineProps) {
 	return (
 		<Card>
 			<CardHeader>
-				<CardTitle className="text-md">Line Chart - Linear</CardTitle>
+				<CardTitle className="text-md">Credit Card Payments</CardTitle>
 				<CardDescription className="text-sm">
 					May - November 2024
 				</CardDescription>
@@ -78,13 +78,13 @@ export function LineGraph({ chartData }: LineProps) {
 					</LineChart>
 				</ChartContainer>
 			</CardContent>
-			<CardFooter className="flex-col items-start gap-2 text-sm">
+			<CardFooter className="flex-col items-start gap-2 pt-4 text-sm">
 				<div className="flex gap-2 font-medium leading-none">
 					Trending up by 5.2% this month{" "}
 					<TrendingUp className="h-4 w-4" />
 				</div>
 				<div className="leading-none text-muted-foreground">
-					Showing total spendings for the last 6 months
+					Showing card payments from the last 6 months
 				</div>
 			</CardFooter>
 		</Card>

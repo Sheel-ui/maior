@@ -79,7 +79,7 @@ export function PieGraph({ chartData }: BarProps) {
 		<div className="h-[400px]">
 			<Card className="flex flex-col h-full">
 				<CardHeader className="items-center pb-0">
-					<CardTitle className="text-md">Pie Chart - Donut</CardTitle>
+					<CardTitle className="text-md">Categories</CardTitle>
 					<CardDescription className="text-sm">
 						May - November 2024
 					</CardDescription>
@@ -147,7 +147,7 @@ export function PieGraph({ chartData }: BarProps) {
 						<TrendingUp className="h-4 w-4" />
 					</div>
 					<div className="leading-none text-muted-foreground text-sm">
-						Showing total spendings for the last 6 months
+						Top categories from the last 6 months
 					</div>
 				</CardFooter>
 			</Card>

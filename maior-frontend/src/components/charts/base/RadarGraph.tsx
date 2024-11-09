@@ -40,9 +40,9 @@ export function RadarGraph({chartData}: RadarProps) {
   return (
     <Card className="h-[450px]">
       <CardHeader className="items-center">
-        <CardTitle className="text-md">Radar Chart - Dots</CardTitle>
+        <CardTitle className="text-md">Payment Channels</CardTitle>
         <CardDescription className="text-sm">
-          Showing total spendings for the last 6 months
+          Spendings using different payment channels
         </CardDescription>
       </CardHeader>
       <CardContent className="pb-0">

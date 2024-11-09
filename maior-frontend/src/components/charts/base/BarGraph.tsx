@@ -37,7 +37,7 @@ export function BarGraph({ chartData }: BarProps) {
 		<div className="w-full flex justify-center items-center">
 			<Card className="w-full">
 				<CardHeader>
-					<CardTitle className="text-md">Bar Chart - Label</CardTitle>
+					<CardTitle className="text-md">Total spending over time</CardTitle>
 					<CardDescription className="text-sm">
 						May - November 2024
 					</CardDescription>

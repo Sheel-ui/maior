@@ -39,8 +39,8 @@ const chartConfig = {
   spendings: {
     label: "spendings",
   },
-  desktop: {
-    label: "Desktop",
+  amount: {
+    label: "Amount",
     color: "hsl(var(--chart-1))",
   },
   mobile: {
@@ -75,7 +75,7 @@ export function TimeSeries( { chartData }: TimeSeriesProps) {
     <Card className="h-[400px]">
       <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
         <div className="grid flex-1 gap-1 text-center sm:text-left">
-          <CardTitle className="text-md">Area Chart - Interactive</CardTitle>
+          <CardTitle className="text-md">Daily Spendings</CardTitle>
           <CardDescription className="text-sm">
             Showing total spendings for the last {timeRange.slice(0,-1)} days
           </CardDescription>

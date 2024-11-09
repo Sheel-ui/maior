@@ -1,10 +1,11 @@
 import HeatGraph from "./base/HeatGraph";
 import { getGraphData } from "@/services/dashboardService";
 import { useState, useEffect } from "react";
+import { DatePicker } from "../custom/DatePicker";
 
 export default function HeatGraphChart() {
-  const [chartData, setChartData] = useState([]);
-  useEffect(() => {
+	const [chartData, setChartData] = useState([]);
+	useEffect(() => {
 		const fetchData = async () => {
 			try {
 				const result = await getGraphData("heatmap");
@@ -16,7 +17,10 @@ export default function HeatGraphChart() {
 
 		fetchData();
 	}, []);
-  return (
-    chartData && <HeatGraph value={chartData}/>
-  )
+	return (
+		<div className="relative">
+			<DatePicker className="absolute right-2 top-2"/>
+			<div>{chartData && <HeatGraph value={chartData} />}</div>
+		</div>
+	);
 }

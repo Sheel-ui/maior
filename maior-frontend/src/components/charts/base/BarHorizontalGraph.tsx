@@ -38,8 +38,8 @@ export function BarHorizontalGraph({chartData}:BarProps) {
   return (
     <Card className="h-[380px]">
       <CardHeader>
-        <CardTitle>Bar Chart - Horizontal</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle className="text-md">Spending in Different Cities</CardTitle>
+        <CardDescription className="text-sm">May- November 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="h-[200px] w-[700px]">
@@ -70,10 +70,10 @@ export function BarHorizontalGraph({chartData}:BarProps) {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this city <TrendingUp className="h-4 w-4" />
+          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total spendings for the last 6 citys
+          Showing total spendings in different cities
         </div>
       </CardFooter>
     </Card>
