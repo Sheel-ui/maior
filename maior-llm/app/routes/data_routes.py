@@ -1,8 +1,12 @@
 from fastapi import APIRouter
-from ..db import transaction_list
+from ..db import transaction_list, azure_llm_35
 from ..helpers.parse import *
+from pydantic import BaseModel
 
 router = APIRouter()
+
+class ModelRequest(BaseModel):
+    query: str
 
 @router.get("/line")
 def get_line_data():
@@ -49,6 +53,6 @@ async def get_heatmap_data():
 def get_credits_data():
     return credit_card_payment()
 
-@router.get("/cities/{month}")
-async def get_cities_data(month: int):
-    return aggregate_city_by_month(transaction_list["transactions"],month)
+@router.post("/generate-graph")
+async def get_cities_data(request: ModelRequest):
+    return visualize(request.query)

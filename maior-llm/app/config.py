@@ -19,8 +19,6 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    # Run the startup task to initialize the database
-
     initialize_db()
 
     return app

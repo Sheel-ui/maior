@@ -2,15 +2,12 @@
 
 ###
 # Create a new item
-POST {{baseUrl}}/items/
+POST {{baseUrl}}/generate-graph
 Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Sample Item 2",
-  "description": "This is a test item 2",
-  "price": 11.99,
-  "quantity": 6
+  "query": "give me top 10 spends"
 }
 
 ###

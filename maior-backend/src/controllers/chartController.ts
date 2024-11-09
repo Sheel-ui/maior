@@ -34,3 +34,14 @@ export const getGraphData = async (req: Request, res: Response, endpoint: string
         });
     }
 }
+
+export const genAiGraphData = async (req: Request, res: Response, endpoint: string): Promise<void> => {
+    try {
+      const { query } = req.body;
+      const response = await axios.post(`http://localhost:8000/${endpoint}`, { query });
+      res.status(response.status).json(response.data);
+    } catch (error) {
+      console.error("Error in forwardGraphRequest:", error);
+      res.status(500).json({ type: "error", data: [] });
+    }
+  }

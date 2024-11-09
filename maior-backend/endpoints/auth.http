@@ -30,3 +30,15 @@ GET {{baseUrl}}/dashboard/cities/9
 Content-Type: application/json
 Accept: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoZWVsdGFza2FyNjRAZ21haWwuY29tIiwiX2lkIjoiNjcyZDc3NGNlMGNjMzY5MmI2ODkxNGM2IiwiaWF0IjoxNzMxMTIzMjAyLCJleHAiOjE3MzEyMDk2MDJ9.SR6DgILzv_DBS5RwU_3h-Kby5-VyDEYHH0Xx4akksxY
+
+
+###
+# Login with the new user
+POST {{baseUrl}}/dashboard/generate-graph
+Content-Type: application/json
+Accept: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoZWVsdGFza2FyNjRAZ21haWwuY29tIiwiX2lkIjoiNjcyZDc3NGNlMGNjMzY5MmI2ODkxNGM2IiwiaWF0IjoxNzMxMTIzMjAyLCJleHAiOjE3MzEyMDk2MDJ9.SR6DgILzv_DBS5RwU_3h-Kby5-VyDEYHH0Xx4akksxY
+
+{
+  "query": "hello"
+}

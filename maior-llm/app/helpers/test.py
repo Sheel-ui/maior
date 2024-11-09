@@ -45,3 +45,13 @@ def transform(df, type):
         return transformed_data
 
 print(transform(result_df,"graph"))
+
+# from langchain_openai import AzureChatOpenAI
+
+# azure_llm_35 = AzureChatOpenAI(
+# azure_endpoint="https://eng-test.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-08-01-preview",
+# api_key="E6Dq0gPTSk3gGIYhaBGe4YR1JiZ3aVYpGOlWuHgqrpCz6jFLQX1GJQQJ99AKACYeBjFXJ3w3AAABACOGBJJN",
+# api_version="2024-08-01-preview"
+# )
+
+# print(azure_llm_35.invoke(prompt).content)
