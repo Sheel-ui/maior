@@ -38,17 +38,17 @@ interface RadarProps {
 
 export function RadarGraph({chartData}: RadarProps) {
   return (
-    <Card>
+    <Card className="h-[450px]">
       <CardHeader className="items-center">
         <CardTitle className="text-md">Radar Chart - Dots</CardTitle>
         <CardDescription className="text-sm">
-          Showing total visitors for the last 6 months
+          Showing total spendings for the last 6 months
         </CardDescription>
       </CardHeader>
       <CardContent className="pb-0">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-square max-h-[250px]"
+          className="mx-auto aspect-square max-h-[300px]"
         >
           <RadarChart data={chartData}>
             <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
@@ -66,7 +66,7 @@ export function RadarGraph({chartData}: RadarProps) {
           </RadarChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="flex-col gap-2 text-sm">
+      <CardFooter className="flex-col gap-2 text-sm -m-6">
         <div className="flex items-center gap-2 font-medium leading-none text-sm">
           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>

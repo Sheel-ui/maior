@@ -88,4 +88,21 @@ router.get(
 	}
 );
 
+router.get(
+	"/credits",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		await getGraphData(req, res, `credits`);
+	}
+);
+
+router.get(
+	"/cities/:id",
+	ensureAuthenticated,
+	async (req: Request, res: Response): Promise<void> => {
+		const { id } = req.params;
+		await getGraphData(req, res, `cities/${id}`);
+	}
+);
+
 export default router;

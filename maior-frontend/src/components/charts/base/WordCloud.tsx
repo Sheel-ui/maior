@@ -12,6 +12,7 @@ interface WordProps {
 }
 
 export default function WordCloud({ data }: WordProps) {
+	
 	return (
 		<div className="h-[360px]">
 			<Card className="flex flex-col h-full pb-8">

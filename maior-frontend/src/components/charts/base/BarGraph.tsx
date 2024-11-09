@@ -34,8 +34,8 @@ interface BarProps {
 
 export function BarGraph({ chartData }: BarProps) {
 	return (
-		<div className="h-[410px] flex justify-center items-center">
-			<Card className="h-full pt-8">
+		<div className="w-full flex justify-center items-center">
+			<Card className="w-full">
 				<CardHeader>
 					<CardTitle className="text-md">Bar Chart - Label</CardTitle>
 					<CardDescription className="text-sm">
@@ -43,12 +43,12 @@ export function BarGraph({ chartData }: BarProps) {
 					</CardDescription>
 				</CardHeader>
 				<CardContent>
-					<ChartContainer config={chartConfig}>
+					<ChartContainer config={chartConfig} className="h-[265px] w-[700px]">
 						<BarChart
 							accessibilityLayer
 							data={chartData}
 							margin={{
-								top: 20,
+								top: 10,
 							}}
 						>
 							<CartesianGrid vertical={false} />
@@ -57,7 +57,7 @@ export function BarGraph({ chartData }: BarProps) {
 								tickLine={false}
 								tickMargin={10}
 								axisLine={false}
-								tickFormatter={(value) => value.slice(5, 7)}
+								tickFormatter={(value) => value.slice(5, 10).replace("-", "/")}
 							/>
 							<ChartTooltip
 								cursor={false}
@@ -66,7 +66,8 @@ export function BarGraph({ chartData }: BarProps) {
 							<Bar
 								dataKey="amount"
 								fill="var(--color-desktop)"
-								radius={8}
+								radius={4}
+								
 							>
 								<LabelList
 									position="top"
@@ -84,7 +85,7 @@ export function BarGraph({ chartData }: BarProps) {
 						<TrendingUp className="h-4 w-4" />
 					</div>
 					<div className="leading-none text-muted-foreground text-sm">
-						Showing total visitors for the last 6 months
+						Showing total spendings for the last 6 months
 					</div>
 				</CardFooter>
 			</Card>

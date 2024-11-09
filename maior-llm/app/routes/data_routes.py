@@ -17,25 +17,10 @@ def get_time_series_data():
 def get_category_data():
     return aggregate_category_by_month(transaction_list["transactions"])
 
-# @router.get("/category/date-range")
-# def get_category_data():
-#     return aggregate_category_by_month(transaction_list["transactions"])
-
 @router.get("/category/week")
 def get_category_data():
     return aggregate_category_by_week(transaction_list["transactions"])
 
-
-@router.get("/bar")
-async def get_bar_data():
-    return {"data": [
-        { "browser": "chrome", "visitors": 275, "fill": "var(--color-chrome)" },
-        { "browser": "safari", "visitors": 200, "fill": "var(--color-safari)" },
-        { "browser": "firefox", "visitors": 287, "fill": "var(--color-firefox)" },
-        { "browser": "edge", "visitors": 173, "fill": "var(--color-edge)" },
-        { "browser": "other", "visitors": 190, "fill": "var(--color-other)" },
-    ]}
-    
 @router.get("/total-spend/month")
 async def get_bar_data():
     return total_spent_by_month(transaction_list["transactions"])
@@ -59,3 +44,11 @@ async def get_word_data(tag):
 @router.get("/heatmap")
 async def get_heatmap_data():
     return heatmap_data(transaction_list["transactions"])
+
+@router.get("/credits")
+def get_credits_data():
+    return credit_card_payment()
+
+@router.get("/cities/{month}")
+async def get_cities_data(month: int):
+    return aggregate_city_by_month(transaction_list["transactions"],month)

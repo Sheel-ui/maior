@@ -40,12 +40,12 @@ Accept: application/json
 
 ###
 # Get all items
-GET {{baseUrl}}/category/week
+GET {{baseUrl}}/cities/9
 Accept: application/json
 
 ###
 # Get an item by ID
-GET {{baseUrl}}/heatmap
+GET {{baseUrl}}/credits
 Accept: application/json
 
 ###

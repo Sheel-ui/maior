@@ -36,8 +36,8 @@ interface TimeSeriesProps {
 }
 
 const chartConfig = {
-  visitors: {
-    label: "Visitors",
+  spendings: {
+    label: "spendings",
   },
   desktop: {
     label: "Desktop",
@@ -72,12 +72,12 @@ export function TimeSeries( { chartData }: TimeSeriesProps) {
   // }));
 
   return (
-    <Card>
+    <Card className="h-[400px]">
       <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
         <div className="grid flex-1 gap-1 text-center sm:text-left">
-          <CardTitle>Area Chart - Interactive</CardTitle>
-          <CardDescription>
-            Showing total visitors for the last 3 months
+          <CardTitle className="text-md">Area Chart - Interactive</CardTitle>
+          <CardDescription className="text-sm">
+            Showing total spendings for the last {timeRange.slice(0,-1)} days
           </CardDescription>
         </div>
         <Select value={timeRange} onValueChange={setTimeRange}>

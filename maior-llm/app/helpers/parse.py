@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta
 from collections import defaultdict
+import math
+import json
 
 def parse_date(transaction):
     if isinstance(transaction["date"], str):
@@ -170,7 +172,7 @@ def total_spent_by_week(transactions):
         week_start = (date_obj - timedelta(days=date_obj.weekday())).strftime("%Y-%m-%d")
         weekly_spending[week_start] += spending
     # Round off the weekly totals to 2 decimal places
-    weekly_spending = [{"start": week, "amount": round(amount, 2)} for week, amount in weekly_spending.items()]
+    weekly_spending = [{"start": week, "amount": int(math.ceil(amount))} for week, amount in weekly_spending.items()]
     return weekly_spending
 
 # Function to calculate monthly spending totals
@@ -326,7 +328,7 @@ def aggregate_category_by_time_period(transactions, timeframe):
     for transaction in filtered_transactions:
         for category in transaction["category"]:
             category_totals[category] += transaction["amount"]
-    word_cloud_data = [{"value": category, "count": round(amount, 2)} for category, amount in category_totals.items()]
+    word_cloud_data = [{"value": category, "count": round(amount, 2), "color": "#299d90" } for category, amount in category_totals.items()]
     
     top_20_word_cloud_data = sorted(word_cloud_data, key=lambda x: x["count"], reverse=True)[:10]
     return top_20_word_cloud_data
@@ -339,3 +341,34 @@ def heatmap_data(transactions):
         date_obj = datetime.strptime(transaction['date'], '%Y-%m-%d')
         transaction['date'] = date_obj.strftime('%Y/%m/%d')
     return [ {"date":i["date"],"count":i["amount"]} for i in spending_dict]
+
+def credit_card_payment():
+    card_payment = []
+    with open('./app/store/parsed_credit_transactions.json', 'r') as file:
+        data = json.load(file)
+    for transaction in data:     
+        card_payment.append({
+            'date': transaction.get('date'),
+            'amount': transaction.get('amount') * (-1),
+        }) 
+    return card_payment
+
+def aggregate_city_by_month(transactions, month):
+    monthly_data = group_by_month(transactions)
+    city_totals = defaultdict(float)
+    
+    if month == 0 :
+        for transaction in transactions:
+            city = transaction.get("location", {}).get("city")
+            if city is not None:
+                city_totals[city] += transaction["amount"]
+
+    if month in monthly_data:
+        for transaction in monthly_data[month]:
+            city = transaction.get("location", {}).get("city") 
+            if city is not None:
+                city_totals[city] += transaction["amount"]
+    
+    result = [{"city": city, "amount": round(total, 2)} for city, total in city_totals.items()]
+    sorted_result = sorted(result, key=lambda x: x["amount"], reverse=True)[:6]
+    return sorted_result

@@ -71,12 +71,12 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function PieGraph({ chartData }: BarProps) {
-	const totalVisitors = React.useMemo(() => {
+	const totalspendings = React.useMemo(() => {
 		return chartData.reduce((acc, curr) => acc + curr.amount, 0);
 	}, [chartData]);
 
 	return (
-		<div className="h-[410px]">
+		<div className="h-[400px]">
 			<Card className="flex flex-col h-full">
 				<CardHeader className="items-center pb-0">
 					<CardTitle className="text-md">Pie Chart - Donut</CardTitle>
@@ -120,7 +120,7 @@ export function PieGraph({ chartData }: BarProps) {
 														y={viewBox.cy}
 														className="fill-foreground text-3xl font-bold"
 													>
-														{totalVisitors.toLocaleString()}
+														{totalspendings.toLocaleString()}
 													</tspan>
 													<tspan
 														x={viewBox.cx}
@@ -147,7 +147,7 @@ export function PieGraph({ chartData }: BarProps) {
 						<TrendingUp className="h-4 w-4" />
 					</div>
 					<div className="leading-none text-muted-foreground text-sm">
-						Showing total visitors for the last 6 months
+						Showing total spendings for the last 6 months
 					</div>
 				</CardFooter>
 			</Card>
