@@ -2,8 +2,6 @@ import axios from "axios";
 
 const API_URL = "http://localhost:8080/dashboard";
 
-const token = localStorage.getItem("token");
-
 export const getAccountId = async (token: string) => {
 	try {
 		const response = await axios.get(`${API_URL}/accountId`, {
@@ -19,6 +17,7 @@ export const getAccountId = async (token: string) => {
 };
 
 export const getGraphData = async (type: string) => {
+	const token = localStorage.getItem("token");
 	if (!token) {
 		return {
 			"message": "Invalid token"
@@ -38,6 +37,7 @@ export const getGraphData = async (type: string) => {
 };
 
 export const getAiGraphData = async (query: string) => {
+	const token = localStorage.getItem("token");
 	if (!token) {
 		return {
 			"message": "Invalid token"
@@ -58,6 +58,7 @@ export const getAiGraphData = async (query: string) => {
 
 
 export const getAiInsightsData = async (type: string) => {
+	const token = localStorage.getItem("token");
 	if (!token) {
 		return {
 			"message": "Invalid token"

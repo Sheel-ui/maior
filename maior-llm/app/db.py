@@ -25,7 +25,6 @@ key_prompts = [
   "Travel Spending Analysis"
 ]
 
-
 ai_prompts = {
     "City Spending Analysis": "Based on my recent spending, which cities do I spend the most in? Provide insights on any trends, such as if I tend to spend more on food, shopping, or entertainment in specific locations.",
     
@@ -54,7 +53,8 @@ ai_prompts = {
     "Travel Spending Analysis": "Provide insights on my travel-related expenses. How much have I spent on lodging or travel services, particularly during my trips? Can you recommend similar travel destinations based on my preferences?"
 }
 
-transaction_list = {"transactions":[]}
+transactions = []
+credits = []
 
 azure_llm_35 = AzureChatOpenAI(
 azure_endpoint=os.getenv("OPENAI_ENDPOINT"),
@@ -62,8 +62,8 @@ api_key=os.getenv("OPENAI_API_KEY"),
 api_version=os.getenv("OPENAI_API_VERSION")
 )
 
-def read_json():
-    with open('./app/store/parsed_transactions.json', 'r') as file:
+def read_json(file_name):
+    with open("./app/store/parsed_{}.json".format(file_name), 'r') as file:
         data = json.load(file)
     return data
 
@@ -73,7 +73,9 @@ def parse_date(transaction):
     return transaction
 
 def initialize_db():
-    global transaction_list 
+    global transactions 
+    global credits
     print("Running startup task...")
-    data = read_json()
-    transaction_list["transactions"] = [parse_date(t) for t in data]
+    data = read_json("transactions")
+    transactions += [parse_date(t) for t in data]
+    credits += read_json("credits")
