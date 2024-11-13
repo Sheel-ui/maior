@@ -4,22 +4,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 import AuthRouter from "./routes/authRoutes";
 import ProductRouter from "./routes/dashboardRoutes";
-import mongoose from "mongoose";
+import dbConnection from "./database";
 
-dotenv.config(); 
+const PORT = process.env.PORT || 8080;
 
-const mongoUrl = process.env.MONGO_CONN as string;
-mongoose
-	.connect(mongoUrl)
-	.then(() => {
-		console.log("MongoDB Connected...");
-	})
-	.catch((err: Error) => {
-		console.error("MongoDB Connection Error:", err);
-	});
+dotenv.config();
+dbConnection();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 app.use(cors());

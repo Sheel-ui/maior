@@ -1,25 +1,26 @@
 from datetime import datetime, timedelta
+from typing import List, Dict
 from collections import defaultdict
 import math
 from ..db import global_df, azure_llm_35, ai_prompts, key_prompts
 import pandasql as ps
 import re
 
-def group_by_week(transactions):
+def group_by_week(transactions: List[Dict]):
     weekly_data = defaultdict(list)
     for transaction in transactions:
         week_start = (transaction["date"] - timedelta(days=transaction["date"].weekday())).strftime("%Y-%m-%d")
         weekly_data[week_start].append(transaction)
     return weekly_data
 
-def group_by_month(transactions):
+def group_by_month(transactions: List[Dict]):
     monthly_data = defaultdict(list)
     for transaction in transactions:
         month = transaction["date"].month
         monthly_data[month].append(transaction)
     return monthly_data
 
-def aggregate_category_by_week(transactions):
+def aggregate_category_by_week(transactions: List[Dict]):
     weekly_data = group_by_week(transactions)
     weekly_category_totals = defaultdict(lambda: defaultdict(float))
     for week_start, transactions in weekly_data.items():
@@ -32,7 +33,7 @@ def aggregate_category_by_week(transactions):
 
     return result
 
-def aggregate_category_by_month(transactions, month):
+def aggregate_category_by_month(transactions: List[Dict], month: int):
     category_totals = defaultdict(float)
     monthly_data = group_by_month(transactions)
     if month == 0 :
@@ -51,7 +52,7 @@ def aggregate_category_by_month(transactions, month):
     result = [{"category": cat, "amount": round(total, 2), "fill": f"var(--color-{cat})"} for cat, total in category_totals.items()]
     return result
 
-def aggregate_category_by_tags(transactions, timeframe):
+def aggregate_category_by_tags(transactions: List[Dict], timeframe: str):
     
     today = datetime.today()
     end_date = today
@@ -74,7 +75,7 @@ def aggregate_category_by_tags(transactions, timeframe):
     top_20_word_cloud_data = sorted(word_cloud_data, key=lambda x: x["count"], reverse=True)[:10]
     return top_20_word_cloud_data
 
-def aggregate_channel_by_month(transactions, month):
+def aggregate_channel_by_month(transactions: List[Dict], month: int):
     monthly_data = group_by_month(transactions)
     initial_values = {'online': 0, 'in store': 0, 'other': 0}
     channel_totals = defaultdict(float, initial_values)
@@ -89,7 +90,7 @@ def aggregate_channel_by_month(transactions, month):
     result = [{"channel": channel, "amount": round(total, 2)} for channel, total in channel_totals.items()]
     return result
 
-def aggregate_city_by_month(transactions, month):
+def aggregate_city_by_month(transactions: List[Dict], month: int):
     monthly_data = group_by_month(transactions)
     city_totals = defaultdict(float)
     
@@ -109,7 +110,7 @@ def aggregate_city_by_month(transactions, month):
     sorted_result = sorted(result, key=lambda x: x["amount"], reverse=True)[:6]
     return sorted_result
 
-def create_spending_dict(transactions):
+def create_spending_dict(transactions: List[Dict]):
     spending_dict = defaultdict(float)
     for transaction in transactions:
         date = transaction["date"].strftime("%Y-%m-%d")
@@ -117,7 +118,7 @@ def create_spending_dict(transactions):
     result = [{"date": date, "amount": round(amount, 2)} for date, amount in spending_dict.items()]
     return result
 
-def spending_dict_for_range(transactions, start_date, end_date):
+def spending_dict_for_range(transactions: List[Dict], start_date: str, end_date: str):
     start_date_obj = datetime.strptime(start_date, "%Y-%m-%d")
     end_date_obj = datetime.strptime(end_date, "%Y-%m-%d")
     spending_data = create_spending_dict(transactions)
@@ -128,13 +129,13 @@ def spending_dict_for_range(transactions, start_date, end_date):
     ]
     return filtered_data
 
-def get_last_week_data(transactions):
+def get_last_week_data(transactions: List[Dict]):
     today = datetime.today()
     start_date = (today - timedelta(days=today.weekday() + 7)).strftime("%Y-%m-%d")
     end_date = (today - timedelta(days=today.weekday() + 1)).strftime("%Y-%m-%d")
     return spending_dict_for_range(transactions, start_date, end_date)
 
-def total_spent_by_week(transactions):
+def total_spent_by_week(transactions: List[Dict]):
     weekly_spending = defaultdict(float)
     date_spending = create_spending_dict(transactions)
     for entry in date_spending:
@@ -146,7 +147,7 @@ def total_spent_by_week(transactions):
     weekly_spending = [{"start": week, "amount": int(math.ceil(amount))} for week, amount in weekly_spending.items()]
     return weekly_spending
 
-def total_spent_by_month(transactions):
+def total_spent_by_month(transactions: List[Dict]):
     monthly_spending = defaultdict(float)
     date_spending = create_spending_dict(transactions)
     for entry in date_spending:
@@ -159,7 +160,7 @@ def total_spent_by_month(transactions):
     
     return monthly_spending
 
-def filter_transactions_by_date(transactions, start_date, end_date):
+def filter_transactions_by_date(transactions: List[Dict], start_date: str, end_date: str):
     filtered = []
     for transaction in transactions:
         if isinstance(transaction["date"], str):
@@ -170,7 +171,7 @@ def filter_transactions_by_date(transactions, start_date, end_date):
             filtered.append(transaction)
     return filtered
 
-def create_heatmap_data(transactions):
+def create_heatmap_data(transactions: List[Dict]):
     spending_dict = create_spending_dict(transactions)
     for transaction in spending_dict:
         if isinstance(transaction['date'], datetime):

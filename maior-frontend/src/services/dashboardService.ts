@@ -56,7 +56,6 @@ export const getAiGraphData = async (query: string) => {
 	}
 };
 
-
 export const getAiInsightsData = async (type: string) => {
 	const token = localStorage.getItem("token");
 	if (!token) {
